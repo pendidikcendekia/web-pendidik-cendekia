@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidik Cendekia - Tentang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        buah: '#F75624',
+                        biru: '#16528F',
+                        krem: '#FFF2DE',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ==== BACKGROUND HERO 3D (ORANGE) ==== */
+        .hero-orange {
+            background:
+                radial-gradient(90% 70% at 14% 8%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 55%),
+                radial-gradient(110% 120% at 90% 105%, rgba(255,217,84,0.45) 0%, rgba(255,255,255,0) 60%),
+                radial-gradient(50% 60% at 50% 0%, rgba(255,222,140,0.6) 0%, rgba(255,255,255,0) 60%),
+                linear-gradient(180deg, #ffbf43 0%, #f75624 45%, #ff8a3d 100%);
+        }
+        .hero-orange::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 8%; right: 8%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+            pointer-events: none;
+        }
+        .hero-orange::after {
+            content: "";
+            position: absolute;
+            inset: auto 0 0 0;
+            height: 3.5rem;
+            background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.18));
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-white text-biru font-sans">
+
+     <!-- ===== NAVBAR ===== -->
+    <header class="sticky top-0 z-50 bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- Logo -->
+                <a href="beranda.html" class="flex items-center gap-3">
+                    <img src="assets/logo/logo-pc.png" alt="Logo Pendidik Cendekia" class="h-10 w-auto">
+                    <span class="font-bold text-xl text-biru">Pendidik Cendekia</span>
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium">
+                    <a href="beranda.html" class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition">Beranda</a>
+                    <a href="tentang.html" class="text-buah font-semibold">Tentang</a>
+                    <div class="relative group">
+                        <button class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition flex items-center gap-1">
+                            Program
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="absolute left-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                            <a href="program/pelatihan-terbaru.html" class="block px-4 py-3 text-biru hover:bg-buah hover:text-white transition rounded-t-xl">Pelatihan Terbaru</a>
+                            <a href="program/belajar-mandiri.html" class="block px-4 py-3 text-biru hover:bg-buah hover:text-white transition rounded-b-xl">Belajar Mandiri</a>
+                        </div>
+                    </div>
+                    <a href="karya.html" class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition">Karya</a>
+                    <a href="artikel.html" class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition">Artikel</a>
+                    <a href="kontak.html" class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition">Kontak</a>
+                    <a href="layanan-member.html" class="text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition">Layanan Member</a>
+                </nav>
+
+                <!-- Aksi Kanan -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://wa.me/628951945123" target="_blank" class="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition">Hubungi WA</a>
+                </div>
+
+                <!-- Tombol Menu HP -->
+                <button id="menuBtn" class="lg:hidden text-biru">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu HP -->
+        <div id="mobileMenu" class="lg:hidden hidden bg-white border-t">
+            <div class="px-4 py-3 space-y-2 font-medium">
+                <a href="beranda.html" class="block py-2 text-biru">Beranda</a>
+                <a href="tentang.html" class="block py-2 text-buah">Tentang</a>
+                <p class="text-biru font-semibold pt-1">Program</p>
+                <a href="program/pelatihan-terbaru.html" class="block pl-4 py-1 text-biru">· Pelatihan Terbaru</a>
+                <a href="program/belajar-mandiri.html" class="block pl-4 py-1 text-biru">· Belajar Mandiri</a>
+                <a href="karya.html" class="block py-2 text-biru">Karya</a>
+                <a href="artikel.html" class="block py-2 text-biru">Artikel</a>
+                <a href="kontak.html" class="block py-2 text-biru">Kontak</a>
+                <a href="layanan-member.html" class="block py-2 text-biru">Layanan Member</a>
+                <a href="https://wa.me/628951945123" target="_blank" class="block py-2 bg-buah text-center text-white rounded-full font-semibold">Hubungi WA</a>
+            </div>
+        </div>
+    </header>
+
+  <!-- ===== HERO TENTANG ===== -->
+    <section class="hero-orange relative overflow-hidden text-white">
+        <div class="pointer-events-none absolute inset-0">
+            <div class="absolute -top-28 -left-28 w-[30rem] h-[30rem] rounded-full bg-white/15 blur-3xl"></div>
+            <div class="absolute -bottom-32 -right-24 w-[34rem] h-[34rem] rounded-full bg-yellow-200/10 blur-3xl"></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+            <p class="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
+                <i class="fas fa-graduation-cap mr-1"></i>TENTANG KAMI
+            </p>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">Mengenal Pendidik Cendekia</h1>
+            <p class="text-white/95 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Unit pengembangan kompetensi pendidik di bawah naungan PT Cipta Arah Cendekia,
+                dengan semangat <span class="font-semibold">Belajar - Bertumbuh - Berdampak</span>.
+            </p>
+        </div>
+    </section>
+
+  <!-- ===== APA ITU PENDIDIK CENDEKIA ===== -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-biru mb-6">Apa itu Pendidik Cendekia?</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">Pendidik Cendekia adalah unit yang berada di bawah naungan <strong>PT Cipta Arah Cendekia</strong>. Unit ini bergerak dalam pengembangan kompetensi pendidik melalui webinar inspiratif dan interaktif untuk meningkatkan pengetahuan dan keterampilan yang relevan dengan era digital.</p>
+                <div class="grid grid-cols-2 gap-3 mt-6">
+                    <div class="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
+                        <div class="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-building-columns text-buah text-xl"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-biru">Naungan PT Cipta Arah Cendekia</p>
+                    </div>
+                    <div class="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
+                        <div class="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-chalkboard-user text-buah text-xl"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-biru">Webinar Inspiratif & Interaktif</p>
+                    </div>
+                    <div class="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
+                        <div class="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-file-certificate text-buah text-xl"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-biru">Sertifikat Dapat Divalidasi</p>
+                    </div>
+                    <div class="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
+                        <div class="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-people-group text-buah text-xl"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-biru">Praktisi & Pakar Pendidikan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-[#f75624] to-[#ffd954] text-white rounded-2xl p-8">
+                <p class="text-sm font-bold uppercase tracking-wide mb-6">Makna Nama Pendidik Cendekia</p>
+                <p class="text-3xl font-extrabold mb-4">Pendidik <span class="text-white/70">+</span> Cendekia</p>
+                <p class="text-white/90 mb-4 leading-relaxed"><strong>Pendidik</strong> — orang yang mendidik; tenaga kependidikan; guru/dosen.</p>
+                <p class="text-white/90 mb-6 leading-relaxed"><strong>Cendekia</strong> — terpelajar, cerdas, bijaksana, tajam pikiran, atau cepat memahami hal baru.</p>
+                <blockquote class="bg-white/20 rounded-xl p-4 italic font-semibold">"Sosok Pendidik yang Cerdas, Bijaksana, dan Terus Bertumbuh."</blockquote>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== VISI & MISI ===== -->
+    <section class="py-16 bg-krem">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Visi -->
+            <div class="bg-gradient-to-br from-[#f75624] to-[#ffd954] text-white rounded-2xl p-8 md:p-12 mb-12 text-center">
+                <p class="text-3xl font-bold uppercase tracking-wide mb-3">Visi</p>
+                <p class="text-2xl md:text-3xl font-extrabold max-w-3xl mx-auto leading-snug">"Menjadi ekosistem pengembangan diri dan keterampilan yang melahirkan insan cerdas, adaptif, serta berdampak."</p>
+            </div>
+
+            <!-- Misi -->
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-biru">Misi Kami</h2>
+                <p class="text-gray-500 mt-3">Tiga pilar untuk mewujudkan Visi</p>
+                <div class="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Misi 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-extrabold text-xl mb-4">1</div>
+                    <h3 class="font-bold text-biru text-lg mb-2">Memfasilitasi Pembelajaran Sepanjang Hayat</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Menyediakan wadah belajar yang terbuka dan terjangkau bagi siapa saja yang ingin mengembangkan potensi diri, tanpa terbatas latar belakang profesi maupun usia.</p>
+                </div>
+
+                <!-- Misi 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-extrabold text-xl mb-4">2</div>
+                    <h3 class="font-bold text-biru text-lg mb-2">Mengakselerasi Keterampilan Praktis & Pemanfaatan Teknologi</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Menyajikan program upskilling berbasis kebutuhan nyata yang relevan dengan perkembangan zaman, sehingga setiap pembelajar mampu bekerja lebih cepat, kreatif, dan efisien.</p>
+                </div>
+
+                <!-- Misi 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-extrabold text-xl mb-4">3</div>
+                    <h3 class="font-bold text-biru text-lg mb-2">Membangun Ekosistem Pendidik yang Berdaya</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Memperlengkapi setiap individu yang berperan sebagai pendidik (guru, orang tua, maupun praktisi) dengan metodologi dan alat bantu modern agar mampu menginspirasi serta membagikan ilmu secara efektif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- ===== UNTUK SIAPA ===== -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-biru">Untuk Siapa Pendidik Cendekia?</h2>
+                <p class="text-gray-500 mt-3">Siapa pun yang memiliki semangat belajar dan ingin bertumbuh</p>
+                <div class="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Guru -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-school text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Guru di Sekolah</h3>
+                    <p class="text-gray-500 text-xs mt-1">Tenaga pendidik formal</p>
+                </div>
+                <!-- Orang Tua -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-people-roof text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Orang Tua</h3>
+                    <p class="text-gray-500 text-xs mt-1">Pendidik pertama keluarga</p>
+                </div>
+                <!-- Trainer -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chalkboard-user text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Trainer</h3>
+                    <p class="text-gray-500 text-xs mt-1">Pelatih & fasilitator</p>
+                </div>
+                <!-- Dosen -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-graduate text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Dosen</h3>
+                    <p class="text-gray-500 text-xs mt-1">Pendidik di perguruan tinggi</p>
+                </div>
+                <!-- Tutor -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book-open-reader text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Tutor</h3>
+                    <p class="text-gray-500 text-xs mt-1">Pendamping belajar</p>
+                </div>
+                <!-- Siapa pun yang Ingin Bertumbuh -->
+                <div class="bg-krem rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-biru">Siapa pun yang Ingin Bertumbuh</h3>
+                    <p class="text-gray-500 text-xs mt-1">Praktisi & siapa saja</p>
+                </div>
+            </div>
+
+            <!-- Banner penutup -->
+            <div class="mt-12 bg-gradient-to-br from-[#f75624] to-[#ffd954] text-white rounded-2xl p-8 text-center">
+                <h3 class="text-xl md:text-2xl font-extrabold">Belajar Tanpa Batas • Kompetensi Tanpa Henti • Dampak untuk Negeri</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-biru text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
+            <div>
+                <img src="assets/logo/logo-pc-footer.png" alt="Logo Pendidik Cendekia" class="h-28 w-auto mb-3">
+                <p class="text-white/80 text-sm">Unit dari PT Cipta Arah Cendekia. Ekosistem pengembangan kompetensi guru.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-krem mb-3">Menu</h4>
+                <ul class="text-white/80 text-sm space-y-1">
+                    <li><a href="tentang.html" class="hover:text-krem transition">Tentang</a></li>
+                    <li><a href="program/pelatihan-terbaru.html" class="hover:text-krem transition">Pelatihan Terbaru</a></li>
+                    <li><a href="program/belajar-mandiri.html" class="hover:text-krem transition">Belajar Mandiri</a></li>
+                    <li><a href="karya.html" class="hover:text-krem transition">Karya</a></li>
+                    <li><a href="artikel.html" class="hover:text-krem transition">Artikel</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-krem mb-3">Kontak</h4>
+                <ul class="text-white/80 text-sm space-y-1">
+                    <li>📍 Yogyakarta, Indonesia</li>
+                    <li>✉️ pendidikcendekia@gmail.com</li>
+                    <li>📸 @pendidikcendekia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-white/60 text-sm mt-8 border-t border-white/20 pt-6">© 2026 Pendidik Cendekia - PT Cipta Arah Cendekia ·
+        </div>
+    </footer>
+
+ <!-- TOMBOL WA MENGAMBANG -->
+    <a href="https://wa.me/628951945123?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia" target="_blank" class="fixed bottom-6 right-6 bg-buah text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-biru transition z-50 text-2xl">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

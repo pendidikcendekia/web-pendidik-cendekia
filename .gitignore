@@ -1,0 +1,15 @@
+# ============================================================
+# Pendidik Cendekia — .gitignore
+# File yang TIDAK ikut di-upload ke GitHub (repo public)
+# ============================================================
+
+# File sistem macOS
+.DS_Store
+
+# File rahasia Google Apps Script (berisi ID Spreadsheet master)
+# JANGAN di-upload — tetap hanya di komputer ini
+scripts/apps-script.gs
+
+# Folder pribadi / draft
+*.tmp
+*.log

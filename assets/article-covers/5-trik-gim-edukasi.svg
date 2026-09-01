@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16528F"/>
+      <stop offset="1" stop-color="#0b2d55"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F75624"/>
+      <stop offset="1" stop-color="#ffe3a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="705" cy="70" r="170" fill="#ffffff" opacity="0.08"/>
+  <circle cx="60" cy="460" r="190" fill="#ffffff" opacity="0.08"/>
+  <circle cx="430" cy="250" r="290" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.12"/>
+  <text x="400" y="105" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="6" opacity="0.9">PENDIDIK CENDEKIA</text>
+  <text x="400" y="140" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="4" fill="#FFF2DE" text-anchor="middle" opacity="0.75">ARTIKEL</text>
+  <text x="400" y="262" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">5 TRIK</text>
+  <text x="400" y="332" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff" text-anchor="middle">MENGHIDUPKAN KELAS</text>
+  <text x="400" y="402" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#FFF2DE" text-anchor="middle">DENGAN GIM EDUKASI</text>
+  <rect x="310" y="428" width="180" height="6" rx="3" fill="url(#bar)"/>
+  <text x="400" y="475" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.8">Belajar Bertumbuh Berdampak</text>
+</svg>
