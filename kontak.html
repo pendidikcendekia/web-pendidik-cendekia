@@ -165,58 +165,8 @@
                 <p id="hasilCari" class="text-center text-sm text-gray-500 mt-3"></p>
             </div>
 
-            <!-- Kartu Rekan -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="daftarAdmin">
-
-                <!-- Bima -->
-                <div class="admin-card bg-white rounded-3xl p-6 text-center border border-krem shadow-sm hover:shadow-xl hover:-translate-y-1 transition"
-                     data-name="bima">
-                    <div class="w-20 h-20 bg-krem rounded-full p-1.5 ring-2 ring-buah mx-auto mb-4 flex items-center justify-center">
-                        <img src="assets/logo/logo-pc.png" alt="Profil Bima" class="rounded-full">
-                    </div>
-                    <h3 class="font-bold text-biru text-lg">Bima</h3>
-                    <p class="text-gray-500 text-xs mb-2">Admin Utama · Pendaftaran & Informasi</p>
-                    <p class="text-biru font-semibold text-sm mb-4">+62 895-1945-123</p>
-                    <a href="https://wa.me/628991945123?text=Halo%20Bima%2C%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia."
-                       target="_blank"
-                       class="block bg-buah text-white font-bold px-5 py-2.5 rounded-full hover:bg-biru transition text-xs">
-                        <i class="fab fa-whatsapp mr-1.5"></i>Chat Bima
-                    </a>
-                </div>
-
-                <!-- Ayu -->
-                <div class="admin-card bg-white rounded-3xl p-6 text-center border border-krem shadow-sm hover:shadow-xl hover:-translate-y-1 transition"
-                     data-name="ayu">
-                    <div class="w-20 h-20 bg-krem rounded-full p-1.5 ring-2 ring-buah mx-auto mb-4 flex items-center justify-center">
-                        <img src="assets/logo/logo-pc.png" alt="Profil Ayu" class="rounded-full">
-                    </div>
-                    <h3 class="font-bold text-biru text-lg">Ayu</h3>
-                    <p class="text-gray-500 text-xs mb-2">Admin Karya & Artikel</p>
-                    <p class="text-biru font-semibold text-sm mb-4">+62 812-7654-3210</p>
-                    <a href="https://wa.me/6281276543210?text=Halo%20Ayu%2C%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia."
-                       target="_blank"
-                       class="block bg-buah text-white font-bold px-5 py-2.5 rounded-full hover:bg-biru transition text-xs">
-                        <i class="fab fa-whatsapp mr-1.5"></i>Chat Ayu
-                    </a>
-                </div>
-
-                <!-- Citra -->
-                <div class="admin-card bg-white rounded-3xl p-6 text-center border border-krem shadow-sm hover:shadow-xl hover:-translate-y-1 transition"
-                     data-name="citra">
-                    <div class="w-20 h-20 bg-krem rounded-full p-1.5 ring-2 ring-buah mx-auto mb-4 flex items-center justify-center">
-                        <img src="assets/logo/logo-pc.png" alt="Profil Citra" class="rounded-full">
-                    </div>
-                    <h3 class="font-bold text-biru text-lg">Citra</h3>
-                    <p class="text-gray-500 text-xs mb-2">Admin Jaringan & Kolaborasi</p>
-                    <p class="text-biru font-semibold text-sm mb-4">+62 813-9876-5432</p>
-                    <a href="https://wa.me/6281398765432?text=Halo%20Citra%2C%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia."
-                       target="_blank"
-                       class="block bg-buah text-white font-bold px-5 py-2.5 rounded-full hover:bg-biru transition text-xs">
-                        <i class="fab fa-whatsapp mr-1.5"></i>Chat Citra
-                    </a>
-                </div>
-
-            </div>
+            <!-- Kartu Rekan (render otomatis dari data-admin.js) -->
+            <div class="flex flex-wrap justify-center gap-6" id="daftarAdmin"></div>
         </div>
     </section>
 
@@ -337,6 +287,7 @@
         <span class="text-sm font-semibold leading-tight">Klaim Sertifikat</span>
     </a>
 
+    <script src="assets/data-admin.js"></script>
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -346,13 +297,32 @@
             if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) mobileMenu.classList.add('hidden');
         });
 
+        // Render kartu admin dari data-admin.js
+        const daftarAdmin = document.getElementById('daftarAdmin');
+        ADMIN_LIST.forEach(a => {
+            daftarAdmin.insertAdjacentHTML('beforeend',
+                '<div class="admin-card bg-white rounded-3xl p-6 text-center border border-krem shadow-sm hover:shadow-xl hover:-translate-y-1 transition w-full max-w-[280px]" data-name="' + a.nama.toLowerCase() + '">' +
+                    '<div class="w-20 h-20 bg-krem rounded-full p-1.5 ring-2 ring-buah mx-auto mb-4 flex items-center justify-center">' +
+                        '<img src="assets/logo/logo-pc.png" alt="Profil ' + a.nama + '" class="rounded-full">' +
+                    '</div>' +
+                    '<h3 class="font-bold text-biru text-lg">' + a.nama + '</h3>' +
+                    '<p class="text-biru font-semibold text-sm mb-4">' + a.telp + '</p>' +
+                    '<a href="https://wa.me/' + a.wa + '?text=Halo%20' + a.nama + '%2C%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia."' +
+                       ' target="_blank"' +
+                       ' class="block bg-buah text-white font-bold px-5 py-2.5 rounded-full hover:bg-biru transition text-xs">' +
+                        '<i class="fab fa-whatsapp mr-1.5"></i>Chat ' + a.nama +
+                    '</a>' +
+                '</div>'
+            );
+        });
+
+        // Pencarian admin
         const cariAdmin = document.getElementById('cariAdmin');
-        const kartuAdmin = document.querySelectorAll('.admin-card');
         const hasilCari = document.getElementById('hasilCari');
         cariAdmin.addEventListener('input', () => {
             const q = cariAdmin.value.trim().toLowerCase();
             let ketemu = 0;
-            kartuAdmin.forEach(kartu => {
+            document.querySelectorAll('.admin-card').forEach(kartu => {
                 const cocok = kartu.dataset.name.includes(q);
                 kartu.classList.toggle('hidden', !cocok);
                 if (cocok) ketemu++;
