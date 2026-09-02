@@ -383,8 +383,10 @@
             }
         ];
 
-        /* ===== TUTUP LOADING ===== */
+        /* ===== TUTUP LOADING + CANCEL REQUEST ===== */
+        let abortController = null;
         function tutupLoading() {
+            if (abortController) abortController.abort();
             document.getElementById('loadingOverlay').classList.add('hidden');
         }
 
@@ -411,14 +413,16 @@
             let daftarPeserta = [];
 
             if (API_URL) {
+                abortController = new AbortController();
                 try {
                     const param = isEmail ? 'email' : 'nama';
-                    const res = await fetch(API_URL + '?' + param + '=' + encodeURIComponent(kataKunci));
+                    const res = await fetch(API_URL + '?' + param + '=' + encodeURIComponent(kataKunci), { signal: abortController.signal });
                     const json = await res.json();
                     daftarPeserta = (json.data || [])
                         .filter(p => p.pelatihan && p.pelatihan.length)
                         .map(normalisasiPeserta);
                 } catch (err) {
+                    if (err.name === 'AbortError') return;
                     console.error('Gagal memanggil API:', err);
                     daftarPeserta = [];
                 }
