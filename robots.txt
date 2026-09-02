@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pendidikcendekia.vercel.app/sitemap.xml
