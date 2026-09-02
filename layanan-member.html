@@ -81,12 +81,12 @@
 
                 <!-- Aksi Kanan -->
                 <div class="hidden lg:flex items-center gap-3">
-                    <a href="https://wa.me/628951945123" target="_blank" class="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition">Hubungi WA</a>
+                    <a href="https://wa.me/628991945123" target="_blank" class="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition">Hubungi WA</a>
                 </div>
 
                 <!-- Tombol Menu HP -->
-                <button id="menuBtn" class="lg:hidden text-biru">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <button id="menuBtn" class="lg:hidden flex items-center gap-1.5 text-biru">
+                    <span class="text-xs font-bold">Menu</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 <a href="artikel.html" class="block py-2 text-biru">Artikel</a>
                 <a href="kontak.html" class="block py-2 text-biru">Kontak</a>
                 <a href="layanan-member.html" class="block py-2 text-buah font-semibold">Layanan Member</a>
-                <a href="https://wa.me/628951945123" target="_blank" class="block py-2 bg-buah text-center text-white rounded-full font-semibold">Hubungi WA</a>
+                <a href="https://wa.me/628991945123" target="_blank" class="block py-2 bg-buah text-center text-white rounded-full font-semibold">Hubungi WA</a>
             </div>
         </div>
     </header>
@@ -121,11 +121,10 @@
                         <i class="fas fa-certificate mr-1"></i>ARSIP PESERTA
                     </span>
                     <h1 class="text-3xl md:text-5xl font-bold mb-3 leading-tight">Validasi & Arsip Pelatihan</h1>
-                    <p class="text-[#ffb38c] font-semibold mb-5">Sertifikat, Fasilitas (Materi & Absensi), dan Rekaman dalam Satu Tempat.</p>
+                    <p class="text-[#ffb38c] font-semibold mb-5">Sertifikat, Fasilitas, dan Rekaman dalam Satu Tempat.</p>
                     <p class="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed">
-                        Validasi keabsahan sertifikat sekaligus temukan kembali seluruh riwayat pelatihan Anda.
-                        Selain mengunduh sertifikat, buka kembali materi di Google Drive dan rekaman kegiatan
-                        di YouTube dari setiap pelatihan yang pernah diikuti — semua tersimpan rapi dalam satu arsip.
+                        Validasi keabsahan sertifikat serta akses kembali materi dan fasilitas pelatihan
+                        yang telah Anda ikuti — semuanya tersimpan rapi dalam satu arsip.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-3">
                         <a href="#form-validasi" class="bg-white text-[#0f3d6d] px-8 py-4 rounded-full font-bold shadow-lg shadow-[#0b2d55]/40 hover:bg-krem transition text-center">Cek Sertifikat & Arsip Anda</a>
@@ -163,6 +162,18 @@
             </form>
         </div>
     </section>
+
+    <!-- ===== LOADING OVERLAY ===== -->
+    <div id="loadingOverlay" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] flex items-center justify-center">
+        <div class="bg-white rounded-3xl px-8 py-10 flex flex-col items-center gap-4 shadow-2xl">
+            <div class="relative w-14 h-14">
+                <div class="absolute inset-0 rounded-full border-4 border-gray-200"></div>
+                <div class="absolute inset-0 rounded-full border-4 border-buah border-t-transparent animate-spin"></div>
+            </div>
+            <p class="text-biru font-bold text-lg">Mencari data Anda...</p>
+            <p class="text-gray-400 text-sm text-center">Mohon tunggu sebentar</p>
+        </div>
+    </div>
 
     <!-- ===== HASIL VALIDASI ===== -->
     <section id="hasil" class="hidden pb-20 bg-white">
@@ -257,7 +268,7 @@
     <footer class="bg-biru text-white py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
             <div>
-                <img src="assets/logo/logo-pc-footer.png" alt="Logo Pendidik Cendekia" class="h-28 w-auto mb-3">
+                <a href="index.html"><img src="assets/logo/logo-pc-footer.png" alt="Logo Pendidik Cendekia" class="h-28 w-auto mb-3 hover:opacity-80 transition"></a>
                 <p class="text-white/80 text-sm">Unit dari PT Cipta Arah Cendekia. Ekosistem pengembangan kompetensi guru.</p>
             </div>
             <div>
@@ -286,7 +297,7 @@
     </footer>
 
  <!-- TOMBOL WA MENGAMBANG -->
-    <a href="https://wa.me/628951945123?text=Halo,%20saya%20ingin%20klaim%20sertifikat" target="_blank" class="fixed bottom-6 right-6 flex items-center gap-2 bg-[#25D366] text-white pl-3 pr-5 py-3 rounded-full shadow-lg hover:bg-[#128C7E] transition z-50">
+    <a href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20klaim%20sertifikat" target="_blank" class="fixed bottom-6 right-6 flex items-center gap-2 bg-[#25D366] text-white pl-3 pr-5 py-3 rounded-full shadow-lg hover:bg-[#128C7E] transition z-50">
         <i class="fab fa-whatsapp text-2xl"></i>
         <span class="text-sm font-semibold leading-tight">Klaim Sertifikat</span>
     </a>
@@ -295,6 +306,8 @@
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+        window.addEventListener('scroll', () => mobileMenu.classList.add('hidden'));
 
         /* ===== API GOOGLE APPS SCRIPT =====
            GANTI URL_RENDAH_INI dengan URL deploy Apps Script:
@@ -368,10 +381,7 @@
             const hasil = document.getElementById('hasil');
             const ditemukan = document.getElementById('hasilDitemukan');
             const tidakDitemukan = document.getElementById('hasilTidakDitemukan');
-
-            hasil.classList.remove('hidden');
-            ditemukan.classList.add('hidden');
-            tidakDitemukan.classList.add('hidden');
+            const loading = document.getElementById('loadingOverlay');
 
             if (!kataKunci) {
                 tidakDitemukan.classList.remove('hidden');
@@ -379,13 +389,14 @@
                 return;
             }
 
+            loading.classList.remove('hidden');
+
             // Deteksi otomatis: jika mengandung "@" anggap email, selain itu nama
             const isEmail = kataKunci.includes('@');
 
             let daftarPeserta = [];
 
             if (API_URL) {
-                // --- Mode live: ambil data dari Google Sheets via Apps Script
                 try {
                     const param = isEmail ? 'email' : 'nama';
                     const res = await fetch(API_URL + '?' + param + '=' + encodeURIComponent(kataKunci));
@@ -398,12 +409,17 @@
                     daftarPeserta = [];
                 }
             } else {
-                // --- Mode demo: pakai data lokal
                 daftarPeserta = dataDemo.filter(p => {
                     if (isEmail) return p.email.toLowerCase().includes(kataKunci);
                     return p.nama.toLowerCase().includes(kataKunci);
                 }).filter(p => p.pelatihan && p.pelatihan.length);
             }
+
+            loading.classList.add('hidden');
+
+            hasil.classList.remove('hidden');
+            ditemukan.classList.add('hidden');
+            tidakDitemukan.classList.add('hidden');
 
             if (daftarPeserta.length) {
                 renderHasil(daftarPeserta);

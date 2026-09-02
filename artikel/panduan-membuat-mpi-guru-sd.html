@@ -55,12 +55,12 @@
 
                 <!-- Aksi Kanan -->
                 <div class="hidden lg:flex items-center gap-3">
-                    <a href="https://wa.me/628951945123" target="_blank" class="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition">Hubungi WA</a>
+                    <a href="https://wa.me/628991945123" target="_blank" class="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition">Hubungi WA</a>
                 </div>
 
                 <!-- Tombol Menu HP -->
-                <button id="menuBtn" class="lg:hidden text-biru">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <button id="menuBtn" class="lg:hidden flex items-center gap-1.5 text-biru">
+                    <span class="text-xs font-bold">Menu</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
         </div>
@@ -77,7 +77,7 @@
                 <a href="../artikel.html" class="block py-2 text-buah font-semibold">Artikel</a>
                 <a href="../kontak.html" class="block py-2 text-biru">Kontak</a>
                 <a href="../layanan-member.html" class="block py-2 text-biru">Layanan Member</a>
-                <a href="https://wa.me/628951945123" target="_blank" class="block py-2 bg-buah text-center text-white rounded-full font-semibold">Hubungi WA</a>
+                <a href="https://wa.me/628991945123" target="_blank" class="block py-2 bg-buah text-center text-white rounded-full font-semibold">Hubungi WA</a>
             </div>
         </div>
     </header>
@@ -155,7 +155,7 @@
             <div class="bg-gray-50 border border-krem rounded-3xl p-8 text-center">
                 <p class="font-bold text-biru text-lg mb-2">Mau membuat MPI sambil dibimbing langsung?</p>
                 <p class="text-gray-500 text-sm mb-5">Ikuti pelatihan kami dan dapatkan pendampingan sampai MPI Anda jadi.</p>
-                <a href="https://wa.me/628951945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20mendaftar%20pelatihan%20pembuatan%20Multimedia%20Interaktif."
+                <a href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20mendaftar%20pelatihan%20pembuatan%20Multimedia%20Interaktif."
                    target="_blank"
                    class="inline-block bg-buah text-white px-8 py-3 rounded-full font-bold hover:bg-biru transition">
                     Daftar via WhatsApp <i class="fab fa-whatsapp ml-2"></i>
@@ -176,7 +176,7 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-gray-500 mb-6 text-sm font-semibold">Ikuti Kami</p>
             <div class="flex justify-center gap-8 text-biru">
-                <a href="https://wa.me/628951945123" target="_blank" class="flex flex-col items-center gap-1 hover:text-buah transition">
+                <a href="https://wa.me/628991945123" target="_blank" class="flex flex-col items-center gap-1 hover:text-buah transition">
                     <i class="fab fa-whatsapp text-3xl"></i>
                     <span class="text-xs">WhatsApp</span>
                 </a>
@@ -204,7 +204,7 @@
     <footer class="bg-biru text-white py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
             <div>
-                <img src="../assets/logo/logo-pc-footer.png" alt="Logo Pendidik Cendekia" class="h-28 w-auto mb-3">
+                <a href="../index.html"><img src="../assets/logo/logo-pc-footer.png" alt="Logo Pendidik Cendekia" class="h-28 w-auto mb-3 hover:opacity-80 transition"></a>
                 <p class="text-white/80 text-sm">Unit dari PT Cipta Arah Cendekia. Ekosistem pengembangan kompetensi guru.</p>
             </div>
             <div>
@@ -231,7 +231,7 @@
     </footer>
 
  <!-- TOMBOL WA MENGAMBANG -->
-    <a href="https://wa.me/628951945123?text=Halo,%20saya%20ingin%20klaim%20sertifikat" target="_blank" class="fixed bottom-6 right-6 flex items-center gap-2 bg-[#25D366] text-white pl-3 pr-5 py-3 rounded-full shadow-lg hover:bg-[#128C7E] transition z-50">
+    <a href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20klaim%20sertifikat" target="_blank" class="fixed bottom-6 right-6 flex items-center gap-2 bg-[#25D366] text-white pl-3 pr-5 py-3 rounded-full shadow-lg hover:bg-[#128C7E] transition z-50">
         <i class="fab fa-whatsapp text-2xl"></i>
         <span class="text-sm font-semibold leading-tight">Klaim Sertifikat</span>
     </a>
@@ -240,6 +240,8 @@
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+        window.addEventListener('scroll', () => mobileMenu.classList.add('hidden'));
     </script>
 </body>
 </html>
