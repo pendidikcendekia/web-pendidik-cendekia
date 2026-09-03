@@ -72,7 +72,7 @@ export default function Navbar() {
                       aria-label="Menu Program"
                       className={
                         isProgramActive
-                          ? "bg-buah text-white font-semibold flex items-center gap-1 px-3 py-2 rounded-lg"
+                          ? "text-buah font-semibold flex items-center gap-1"
                           : "text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition flex items-center gap-1"
                       }
                     >
