@@ -7,31 +7,20 @@ export default function ChannelSection() {
           <a
             href="https://wa.me/628991945123"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-1 hover:text-buah transition"
           >
             <i className="fab fa-whatsapp text-3xl"></i>
             <span className="text-xs">WhatsApp</span>
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/pendidikcendekia"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-1 hover:text-buah transition"
           >
             <i className="fab fa-instagram text-3xl"></i>
             <span className="text-xs">Instagram</span>
-          </a>
-          <a
-            href="#"
-            className="flex flex-col items-center gap-1 hover:text-buah transition"
-          >
-            <i className="fab fa-youtube text-3xl"></i>
-            <span className="text-xs">YouTube</span>
-          </a>
-          <a
-            href="#"
-            className="flex flex-col items-center gap-1 hover:text-buah transition"
-          >
-            <i className="fab fa-facebook text-3xl"></i>
-            <span className="text-xs">Facebook</span>
           </a>
           <a
             href="mailto:pendidikcendekia@gmail.com"

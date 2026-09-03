@@ -2,8 +2,7 @@
 
 import { useState, useRef } from "react";
 
-const API_URL =
-  "https://script.google.com/macros/s/AKfycbx9lewD5QbzG4CF6-3K3tFxh80c5dA7QVE0BuKPQW9J6-GXDbIt-9o53jFfm24FSq1z/exec";
+const API_URL = "/api/validasi";
 
 interface Pelatihan {
   topik: string;
@@ -184,6 +183,7 @@ export default function LayananMemberPage() {
                 placeholder="Masukkan nama atau email"
                 value={kataKunci}
                 onChange={(e) => setKataKunci(e.target.value)}
+                aria-label="Nama atau email peserta"
                 className="w-full border border-[#c5e9f6] bg-white rounded-xl px-4 py-3 text-biru placeholder-gray-400 focus:outline-none focus:border-buah transition"
               />
             </div>
@@ -203,10 +203,15 @@ export default function LayananMemberPage() {
 
       {/* ===== LOADING OVERLAY ===== */}
       {loading && (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] flex items-center justify-center">
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] flex items-center justify-center"
+          role="status"
+          aria-live="polite"
+        >
           <div className="bg-white rounded-3xl px-8 py-10 flex flex-col items-center gap-4 shadow-2xl relative">
             <button
               onClick={tutupLoading}
+              aria-label="Tutup pencarian"
               className="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-red-100 text-gray-500 hover:text-red-500 transition"
             >
               <i className="fas fa-xmark text-sm"></i>

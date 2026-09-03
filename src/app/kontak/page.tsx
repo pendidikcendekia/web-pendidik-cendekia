@@ -1,12 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-const ADMIN_LIST = [
-  { nama: "Bima", wa: "628991945123", telp: "+62 895-1945-123" },
-  { nama: "Ayu", wa: "6281276543210", telp: "+62 812-7654-3210" },
-  { nama: "Citra", wa: "6281398765432", telp: "+62 813-9876-5432" },
-];
+import { ADMIN_LIST } from "@/data/admin";
 
 export default function KontakPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -100,6 +95,7 @@ export default function KontakPage() {
                 placeholder="Cari nama rekan (Bima, Ayu, Citra)…"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                aria-label="Cari nama rekan admin"
                 className="w-full bg-white border-2 border-krem rounded-full pl-12 pr-5 py-3.5 text-biru placeholder-gray-400 shadow-md focus:outline-none focus:border-buah transition"
               />
             </div>
@@ -171,6 +167,7 @@ export default function KontakPage() {
                   placeholder="Masukkan nama Anda"
                   value={nama}
                   onChange={(e) => setNama(e.target.value)}
+                  aria-label="Nama lengkap"
                   className="w-full border border-[#c5e9f6] bg-white rounded-xl px-4 py-3 text-biru placeholder-gray-400 focus:outline-none focus:border-buah transition"
                 />
               </div>
@@ -181,6 +178,7 @@ export default function KontakPage() {
                 <select
                   value={jenis}
                   onChange={(e) => setJenis(e.target.value)}
+                  aria-label="Jenis keluhan atau laporan"
                   className="w-full border border-[#c5e9f6] bg-white rounded-xl px-4 py-3 text-biru focus:outline-none focus:border-buah transition"
                 >
                   <option>Layanan &amp; Informasi Program</option>
@@ -199,6 +197,7 @@ export default function KontakPage() {
                   placeholder="Tuliskan kronologi atau uraian masalah Anda..."
                   value={pesan}
                   onChange={(e) => setPesan(e.target.value)}
+                  aria-label="Uraian keluhan atau laporan"
                   className="w-full border border-[#c5e9f6] bg-white rounded-xl px-4 py-3 text-biru placeholder-gray-400 focus:outline-none focus:border-buah transition resize-none"
                 ></textarea>
               </div>

@@ -55,7 +55,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3" aria-label="Ke halaman beranda">
             <img
               src="/assets/logo/logo-pc.png"
               alt="Logo Pendidik Cendekia"
@@ -73,6 +73,7 @@ export default function Navbar() {
                 return (
                   <div key={item.url} className="relative group">
                     <button
+                      aria-label="Menu Program"
                       className={
                         isProgramActive
                           ? "text-buah font-semibold flex items-center gap-1"
@@ -148,6 +149,8 @@ export default function Navbar() {
               setMobileOpen(!mobileOpen);
             }}
             className="lg:hidden flex items-center gap-1.5"
+            aria-label={mobileOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
+            aria-expanded={mobileOpen}
           >
             <span className="text-xs font-bold text-biru">Menu</span>
             <svg
