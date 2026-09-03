@@ -7,6 +7,7 @@ import { useState, useRef, useEffect } from "react";
 const menuItems = [
   { label: "Beranda", url: "/" },
   { label: "Tentang", url: "/tentang" },
+  { label: "Program", url: "/program", isDropdown: true },
   { label: "Karya", url: "/karya" },
   { label: "Artikel", url: "/artikel" },
   { label: "Kontak", url: "/kontak" },
@@ -68,7 +69,51 @@ export default function Navbar() {
           {/* Menu Desktop */}
           <nav className="hidden lg:flex items-center gap-7 font-medium">
             {menuItems.map((item) => {
-              if (item.label === "Program") return null;
+              if (item.isDropdown) {
+                return (
+                  <div key={item.url} className="relative group">
+                    <button
+                      className={
+                        isProgramActive
+                          ? "text-buah font-semibold flex items-center gap-1"
+                          : "text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition flex items-center gap-1"
+                      }
+                    >
+                      {item.label}
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div className="absolute left-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                      {programItems.map((item, i) => (
+                        <Link
+                          key={item.url}
+                          href={item.url}
+                          className={`block px-4 py-3 text-biru hover:bg-buah hover:text-white transition ${
+                            i === 0 ? "rounded-t-xl" : ""
+                          } ${
+                            i === programItems.length - 1
+                              ? "rounded-b-xl"
+                              : ""
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
               return (
                 <Link
                   key={item.url}
@@ -83,45 +128,6 @@ export default function Navbar() {
                 </Link>
               );
             })}
-
-            {/* Program Dropdown */}
-            <div className="relative group">
-              <button
-                className={
-                  isProgramActive
-                    ? "text-buah font-semibold flex items-center gap-1"
-                    : "text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition flex items-center gap-1"
-                }
-              >
-                Program
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-              <div className="absolute left-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                {programItems.map((item, i) => (
-                  <Link
-                    key={item.url}
-                    href={item.url}
-                    className={`block px-4 py-3 text-biru hover:bg-buah hover:text-white transition ${
-                      i === 0 ? "rounded-t-xl" : ""
-                    } ${i === programItems.length - 1 ? "rounded-b-xl" : ""}`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
           </nav>
 
           {/* Aksi Kanan */}
@@ -183,29 +189,37 @@ export default function Navbar() {
         } bg-white border-t`}
       >
         <div className="px-4 py-3 space-y-2 font-medium">
-          {menuItems.map((item) => (
-            <Link
-              key={item.url}
-              href={item.url}
-              className={`block py-2 ${
-                isActive(item.url) ? "text-buah" : "text-biru"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <p className="text-biru font-semibold pt-1">Program</p>
-          {programItems.map((item) => (
-            <Link
-              key={item.url}
-              href={item.url}
-              className={`block pl-4 py-1 ${
-                isActive(item.url) ? "text-buah" : "text-biru"
-              }`}
-            >
-              · {item.label}
-            </Link>
-          ))}
+          {menuItems.map((item) => {
+            if (item.isDropdown) {
+              return (
+                <div key={item.url}>
+                  <p className="text-biru font-semibold py-2">Program</p>
+                  {programItems.map((sub) => (
+                    <Link
+                      key={sub.url}
+                      href={sub.url}
+                      className={`block pl-4 py-1 ${
+                        isActive(sub.url) ? "text-buah" : "text-biru"
+                      }`}
+                    >
+                      · {sub.label}
+                    </Link>
+                  ))}
+                </div>
+              );
+            }
+            return (
+              <Link
+                key={item.url}
+                href={item.url}
+                className={`block py-2 ${
+                  isActive(item.url) ? "text-buah" : "text-biru"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
           <a
             href="https://wa.me/628991945123"
             target="_blank"
