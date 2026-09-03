@@ -19,10 +19,6 @@ export default function Beranda() {
     <>
       {/* HERO */}
       <section className="hero-orange relative overflow-hidden text-white py-16">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-28 -left-28 w-[30rem] h-[30rem] rounded-full bg-white/15 blur-3xl"></div>
-          <div className="absolute -bottom-32 -right-24 w-[34rem] h-[34rem] rounded-full bg-yellow-200/10 blur-3xl"></div>
-        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div>

@@ -60,10 +60,6 @@ export default function PelatihanTerbaruPage() {
     <>
       {/* ===== HERO PELATIHAN TERBARU ===== */}
       <section className="hero-orange relative overflow-hidden text-white">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -top-28 -left-28 w-[30rem] h-[30rem] rounded-full bg-white/15 blur-3xl"></div>
-          <div className="absolute -bottom-32 -right-24 w-[34rem] h-[34rem] rounded-full bg-yellow-200/10 blur-3xl"></div>
-        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           <p className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
             <i className="fas fa-calendar-check mr-1"></i>Update Agustus 2026

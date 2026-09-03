@@ -117,10 +117,6 @@ export default function LayananMemberPage() {
       <section className="py-14 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="hero-safir relative overflow-hidden rounded-[2.5rem] shadow-2xl shadow-[#0b2d55]/30 px-6 py-14 md:py-16 text-center text-white">
-            <div className="pointer-events-none absolute inset-0">
-              <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
-              <div className="absolute -bottom-28 -right-20 w-96 h-96 rounded-full bg-[#ffd954]/10 blur-3xl"></div>
-            </div>
             <div className="relative">
               <span className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
                 <i className="fas fa-certificate mr-1"></i>ARSIP PESERTA
@@ -414,10 +410,6 @@ export default function LayananMemberPage() {
             </div>
 
             <div className="hero-safir relative overflow-hidden rounded-3xl shadow-2xl shadow-[#0b2d55]/30 p-8 text-center text-white flex flex-col">
-              <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-white/10 blur-3xl"></div>
-                <div className="absolute -bottom-24 -right-16 w-80 h-80 rounded-full bg-[#ffd954]/10 blur-3xl"></div>
-              </div>
               <div className="relative">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <i className="fas fa-calendar-days text-2xl"></i>

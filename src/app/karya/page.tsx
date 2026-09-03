@@ -77,10 +77,6 @@ export default function KaryaPage() {
             </div>
 
             <div className="hero-safir relative overflow-hidden rounded-[2.5rem] shadow-2xl shadow-[#0b2d55]/30 p-8 md:p-12 text-white">
-              <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
-                <div className="absolute -bottom-28 -right-20 w-96 h-96 rounded-full bg-[#ffd954]/10 blur-3xl"></div>
-              </div>
               <div className="relative">
                 <span className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
                   <i className="fas fa-box-open mr-1"></i>KARYA PESERTA
@@ -260,8 +256,6 @@ export default function KaryaPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-gradient-to-br from-[#16528F] via-[#10385f] to-[#0b2d55] rounded-[2.5rem] px-6 py-14 md:py-16 text-center shadow-2xl shadow-[#0b2d55]/30">
             <div className="pointer-events-none absolute inset-0">
-              <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
-              <div className="absolute -bottom-28 -right-20 w-96 h-96 rounded-full bg-[#ffd954]/10 blur-3xl"></div>
               <div className="absolute top-0 left-10 right-10 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#071c35]/50 to-transparent"></div>
             </div>
