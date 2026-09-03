@@ -64,7 +64,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center text-white/60 text-sm mt-8 border-t border-white/20 pt-6">
-        © 2026 Pendidik Cendekia - PT Cipta Arah Cendekia ·
+        © 2026 Pendidik Cendekia - PT Cipta Arah Cendekia ·{" "}
+        <Link
+          href="/kebijakan-privasi"
+          className="hover:text-krem transition"
+        >
+          Kebijakan Privasi
+        </Link>
       </div>
     </footer>
   );

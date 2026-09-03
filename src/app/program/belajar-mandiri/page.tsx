@@ -58,7 +58,7 @@ export default function BelajarMandiriPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center">
               <img
-                src="/assets/flyer/Flyer-Belajar-Mandiri.png"
+                src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
                 alt="Flyer Belajar Mandiri"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
@@ -292,7 +292,7 @@ export default function BelajarMandiriPage() {
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/flyer/Contoh-Sertifikat.png"
+                  src="/assets/flyer/Contoh-Sertifikat.webp"
                   alt="Contoh Sertifikat"
                   className="w-full h-auto"
                 />
@@ -333,7 +333,7 @@ export default function BelajarMandiriPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-1.png"
+                  src="/assets/flyer/contoh-pamflet-1.webp"
                   alt="Flyer Topik Ruang Murid"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -363,7 +363,7 @@ export default function BelajarMandiriPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-2.png"
+                  src="/assets/flyer/contoh-pamflet-2.webp"
                   alt="Flyer Topik Karya Ilmiah"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -393,7 +393,7 @@ export default function BelajarMandiriPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-3.png"
+                  src="/assets/flyer/contoh-pamflet-3.webp"
                   alt="Flyer Topik Media AI"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />

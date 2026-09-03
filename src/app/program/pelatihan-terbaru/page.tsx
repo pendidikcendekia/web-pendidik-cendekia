@@ -93,7 +93,7 @@ export default function PelatihanTerbaruPage() {
           <div className="grid md:grid-cols-2">
             <div className="bg-krem p-3 flex items-center justify-center">
               <img
-                src="/assets/flyer/contoh-pamflet-1.png"
+                src="/assets/flyer/contoh-pamflet-1.webp"
                 alt="Flyer Pelatihan Terdekat"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
@@ -374,7 +374,7 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/contoh-pamflet-2.png"
+                    src="/assets/flyer/contoh-pamflet-2.webp"
                     alt="Flyer Workshop Karya Ilmiah"
                     className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
                   />
@@ -415,7 +415,7 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/contoh-pamflet-3.png"
+                    src="/assets/flyer/contoh-pamflet-3.webp"
                     alt="Flyer Seminar Media AI"
                     className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
                   />

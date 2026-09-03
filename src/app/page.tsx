@@ -53,7 +53,7 @@ export default function Beranda() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/flyer/contoh-pamflet-2.png"
+                src="/assets/flyer/contoh-pamflet-2.webp"
                 alt="Flyer Pendidik Cendekia"
                 className="w-full max-w-xs h-auto rounded-2xl shadow-2xl"
               />
@@ -134,7 +134,7 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-2.png"
+                  src="/assets/flyer/contoh-pamflet-2.webp"
                   alt="Flyer Webinar Optimalisasi KKA"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -170,7 +170,7 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-3.png"
+                  src="/assets/flyer/contoh-pamflet-3.webp"
                   alt="Flyer Workshop Deep Learning"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -206,7 +206,7 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-1.png"
+                  src="/assets/flyer/contoh-pamflet-1.webp"
                   alt="Flyer Optimalisasi Ruang Murid"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -268,7 +268,7 @@ export default function Beranda() {
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-krem rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex items-center max-w-3xl mx-auto w-full">
               <img
-                src="/assets/karya/Sampul-MPI-1.png"
+                src="/assets/karya/Sampul-MPI-1.webp"
                 alt="Tarik Tambang Matematika"
                 loading="lazy"
                 className="w-40 h-40 object-cover shrink-0"
@@ -292,7 +292,7 @@ export default function Beranda() {
             </div>
             <div className="bg-krem rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex items-center max-w-3xl mx-auto w-full">
               <img
-                src="/assets/karya/Sampul-MPI-2.png"
+                src="/assets/karya/Sampul-MPI-2.webp"
                 alt="Adu Cepat Isi Botol"
                 loading="lazy"
                 className="w-40 h-40 object-cover shrink-0"
@@ -322,7 +322,7 @@ export default function Beranda() {
             </div>
             <div className="bg-krem rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex items-center max-w-3xl mx-auto w-full">
               <img
-                src="/assets/karya/Sampul-MPI-3.png"
+                src="/assets/karya/Sampul-MPI-3.webp"
                 alt="MPI Peluang"
                 loading="lazy"
                 className="w-40 h-40 object-cover shrink-0"

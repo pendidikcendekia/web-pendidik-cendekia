@@ -10,7 +10,7 @@ export default function KaryaPage() {
     {
       mapel: "matematika",
       jenjang: "sd",
-      img: "/assets/karya/Sampul-MPI-1.png",
+      img: "/assets/karya/Sampul-MPI-1.webp",
       alt: "Sampul Karya Tarik Tambang Matematika",
       tag: "Gim Pembelajaran",
       title: "Tarik Tambang Matematika",
@@ -22,7 +22,7 @@ export default function KaryaPage() {
     {
       mapel: "ipas",
       jenjang: "sd",
-      img: "/assets/karya/Sampul-MPI-2.png",
+      img: "/assets/karya/Sampul-MPI-2.webp",
       alt: "Sampul Karya Adu Cepat Isi Botol",
       tag: "Gim Pembelajaran",
       title: "Adu Cepat Isi Botol",
@@ -34,7 +34,7 @@ export default function KaryaPage() {
     {
       mapel: "matematika",
       jenjang: "sd",
-      img: "/assets/karya/Sampul-MPI-3.png",
+      img: "/assets/karya/Sampul-MPI-3.webp",
       alt: "Sampul Karya MPI Peluang",
       tag: "Multimedia Interaktif",
       title: "MPI Peluang",
@@ -66,7 +66,7 @@ export default function KaryaPage() {
               <div className="relative flex flex-col items-center">
                 <div className="w-72 h-72 md:w-96 md:h-96 lg:w-[26rem] lg:h-[26rem] rounded-full bg-white overflow-hidden ring-8 ring-[#16528F] shadow-xl flex items-center justify-center">
                   <img
-                    src="/assets/Elemen/Karya-Elemen-1.png"
+                    src="/assets/Elemen/Karya-Elemen-1.webp"
                     alt="Ilustrasi Karya Pendidik Cendekia"
                     className="w-full h-full object-cover object-center"
                   />

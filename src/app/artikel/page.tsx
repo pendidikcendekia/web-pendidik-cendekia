@@ -61,7 +61,7 @@ export default function ArtikelPage() {
               <div className="relative flex flex-col items-center">
                 <div className="w-72 h-72 md:w-[26rem] md:h-[26rem] bg-krem rounded-full flex items-center justify-center">
                   <img
-                    src="/assets/Elemen/Artikel-Elemen-1.png"
+                    src="/assets/Elemen/Artikel-Elemen-1.webp"
                     alt="Ilustrasi Artikel Pendidik Cendekia"
                     className="w-60 h-60 md:w-[22rem] md:h-[22rem] object-contain drop-shadow-2xl"
                   />

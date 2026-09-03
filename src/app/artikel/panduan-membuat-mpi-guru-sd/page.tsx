@@ -60,7 +60,7 @@ export default function PanduanMembuatMpiPage() {
 
           <div className="bg-krem rounded-3xl p-6 mb-8">
             <img
-              src="/assets/karya/Sampul-MPI-1.png"
+              src="/assets/karya/Sampul-MPI-1.webp"
               alt="Sampul MPI Tarik Tambang Matematika"
               className="w-full max-w-md mx-auto rounded-2xl shadow-2xl object-contain h-72"
             />

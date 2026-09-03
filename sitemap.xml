@@ -37,6 +37,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://pendidikcendekia.vercel.app/kebijakan-privasi</loc>
+        <lastmod>2026-09-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://pendidikcendekia.vercel.app/program/pelatihan-terbaru</loc>
         <lastmod>2026-09-03</lastmod>
         <changefreq>weekly</changefreq>
