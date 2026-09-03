@@ -198,7 +198,8 @@ export default function PelatihanTerbaruPage() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-buah"
+                    aria-label="Nama lengkap"
+                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-buah"
                   />
                   <input
                     type="email"
@@ -206,7 +207,8 @@ export default function PelatihanTerbaruPage() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-buah"
+                    aria-label="Email aktif"
+                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-buah"
                   />
                   <input
                     type="tel"
@@ -214,21 +216,24 @@ export default function PelatihanTerbaruPage() {
                     required
                     value={wa}
                     onChange={(e) => setWa(e.target.value)}
-                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-buah"
+                    aria-label="Nomor WhatsApp"
+                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-buah"
                   />
                   <input
                     type="text"
                     placeholder="Instansi / Sekolah"
                     value={instansi}
                     onChange={(e) => setInstansi(e.target.value)}
-                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-buah"
+                    aria-label="Instansi atau sekolah"
+                    className="w-full mb-3 px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-buah"
                   />
                   <input
                     type="text"
                     placeholder="Asal Provinsi"
                     value={provinsi}
                     onChange={(e) => setProvinsi(e.target.value)}
-                    className="w-full mb-4 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-buah"
+                    aria-label="Asal provinsi"
+                    className="w-full mb-4 px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-buah"
                   />
                   <button
                     type="submit"

@@ -49,8 +49,7 @@ export default function ArtikelPage() {
                   Baca Artikel
                 </Link>
                 <a
-                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20mempublikasikan%20artikel%20saya."
-                  target="_blank"
+                  href="#publish-artikel"
                   className="border-2 border-buah text-buah font-bold px-8 py-3 rounded-full hover:bg-buah hover:text-white transition text-center"
                 >
                   Publish Artikel
@@ -239,7 +238,10 @@ export default function ArtikelPage() {
       </section>
 
       {/* ===== CTA PUBLISH ARTIKEL ===== */}
-      <section className="py-6 md:py-12 bg-white">
+      <section
+        id="publish-artikel"
+        className="py-6 md:py-12 bg-white"
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-gradient-to-br from-[#16528F] via-[#10385f] to-[#0b2d55] rounded-[2.5rem] px-6 py-14 md:py-16 text-center shadow-2xl shadow-[#0b2d55]/30">
             <div className="pointer-events-none absolute inset-0">

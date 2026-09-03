@@ -11,7 +11,10 @@ export async function GET(req: NextRequest) {
   const email = searchParams.get("email");
 
   if (!nama && !email) {
-    return NextResponse.json({ ok: false, error: "Param nama/email kosong" });
+    return NextResponse.json(
+      { ok: false, error: "Param nama/email kosong" },
+      { status: 400 }
+    );
   }
 
   const param = email ? "email" : "nama";

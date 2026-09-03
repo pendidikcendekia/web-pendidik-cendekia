@@ -37,10 +37,6 @@ export default function Navbar() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
-
   const isActive = (url: string) => {
     if (url === "/") return pathname === "/";
     return pathname.startsWith(url);
@@ -76,7 +72,7 @@ export default function Navbar() {
                       aria-label="Menu Program"
                       className={
                         isProgramActive
-                          ? "text-buah font-semibold flex items-center gap-1"
+                          ? "bg-buah text-white font-semibold flex items-center gap-1 px-3 py-2 rounded-lg"
                           : "text-biru hover:bg-krem hover:text-buah px-3 py-2 rounded-lg transition flex items-center gap-1"
                       }
                     >
@@ -100,7 +96,11 @@ export default function Navbar() {
                         <Link
                           key={item.url}
                           href={item.url}
-                          className={`block px-4 py-3 text-biru hover:bg-buah hover:text-white transition ${
+                          className={`block px-4 py-3 transition ${
+                            isActive(item.url)
+                              ? "bg-buah text-white font-semibold"
+                              : "text-biru hover:bg-buah hover:text-white"
+                          } ${
                             i === 0 ? "rounded-t-xl" : ""
                           } ${
                             i === programItems.length - 1
@@ -201,6 +201,7 @@ export default function Navbar() {
                     <Link
                       key={sub.url}
                       href={sub.url}
+                      onClick={() => setMobileOpen(false)}
                       className={`block pl-4 py-1 ${
                         isActive(sub.url) ? "text-buah" : "text-biru"
                       }`}
@@ -215,6 +216,7 @@ export default function Navbar() {
               <Link
                 key={item.url}
                 href={item.url}
+                onClick={() => setMobileOpen(false)}
                 className={`block py-2 ${
                   isActive(item.url) ? "text-buah" : "text-biru"
                 }`}
@@ -226,6 +228,7 @@ export default function Navbar() {
           <a
             href="https://wa.me/628991945123"
             target="_blank"
+            onClick={() => setMobileOpen(false)}
             className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
           >
             Hubungi WA
