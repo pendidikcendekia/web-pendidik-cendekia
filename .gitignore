@@ -8,6 +8,12 @@
 # Build output
 /.next
 /out
+/.open-next
+
+# Cloudflare
+/.wrangler
+/.dev.vars
+cloudflare-env.d.ts
 
 # File sistem macOS
 .DS_Store
