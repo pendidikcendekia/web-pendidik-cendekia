@@ -16,10 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Pendidik Cendekia",
-    images: ["/assets/logo/logo-pc.png"],
+    images: ["/assets/logo/logo-pc.webp"],
   },
   icons: {
-    icon: "/assets/logo/logo-pc.png",
+    icon: [
+      { url: "/icon-512.webp", type: "image/webp", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 

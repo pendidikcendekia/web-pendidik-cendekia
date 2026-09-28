@@ -112,7 +112,7 @@ export default function KontakPage() {
               >
                 <div className="w-20 h-20 bg-krem rounded-full p-1.5 ring-2 ring-buah mx-auto mb-4 flex items-center justify-center">
                   <img
-                    src="/assets/logo/logo-pc.png"
+                    src="/assets/logo/logo-pc.webp"
                     alt={`Profil ${a.nama}`}
                     className="rounded-full"
                   />

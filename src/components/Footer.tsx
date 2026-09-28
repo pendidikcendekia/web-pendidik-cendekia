@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <Link href="/">
             <img
-              src="/assets/logo/logo-pc-footer.png"
+              src="/assets/logo/logo-pc-footer.webp"
               alt="Logo Pendidik Cendekia"
               loading="lazy"
               className="h-28 w-auto mb-3 hover:opacity-80 transition"

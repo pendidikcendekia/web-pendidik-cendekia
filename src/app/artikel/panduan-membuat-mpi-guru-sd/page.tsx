@@ -11,7 +11,7 @@ export const metadata = {
       "Panduan lengkap membuat Multimedia Pembelajaran Interaktif untuk guru SD.",
     url: "https://pendidikcendekia.vercel.app/artikel/panduan-membuat-mpi-guru-sd",
     type: "article",
-    images: ["/assets/logo/logo-pc.png"],
+    images: ["/assets/logo/logo-pc.webp"],
   },
   alternates: {
     canonical:

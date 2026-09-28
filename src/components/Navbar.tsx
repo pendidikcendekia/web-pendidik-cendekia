@@ -53,7 +53,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3" aria-label="Ke halaman beranda">
             <img
-              src="/assets/logo/logo-pc.png"
+              src="/assets/logo/logo-pc.webp"
               alt="Logo Pendidik Cendekia"
               className="h-10 w-auto"
             />

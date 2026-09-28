@@ -11,7 +11,7 @@ export const metadata = {
       "Artikel dan panduan praktis untuk guru. Tips mengajar dan teknologi pendidik.",
     url: "https://pendidikcendekia.vercel.app/artikel",
     type: "website",
-    images: ["/assets/logo/logo-pc.png"],
+    images: ["/assets/logo/logo-pc.webp"],
   },
   alternates: {
     canonical: "https://pendidikcendekia.vercel.app/artikel",
