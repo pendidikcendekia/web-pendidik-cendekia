@@ -45,9 +45,9 @@ Koreksi setelah pengecekan user:
 | Item | Perbaikan |
 |---|---|
 | Tombol hero Beranda | "Lihat Jadwal Pelatihan" (bukan "Daftar Sekarang") & **"Validasi Sertifikat"** (bukan "Lihat Detail") |
-| Contoh Sertifikat | Desain diubah seperti "PELATIHAN TERDEKAT" — gambar kiri (kecil), keterangan kanan. Judul jadi **"Sertifikat dapat di Validasi"** |
+| Contoh Sertifikat | Desain disamakan persis dengan **"PELATIHAN TERDEKAT"**: kartu bg putih, **teks di kiri** (putih), **gambar di kanan** (bg krem). Judul tidak diulang lagi — hanya badge "CONTOH SERTIFIKAT" + judul "Sertifikat dapat di Validasi" |
 | Validasi | Cek berdasarkan **nama yang terdaftar**, bukan nomor sertifikat |
-| Penawaran Belajar Mandiri | Posisi dibalik — **gambar di kanan** |
+| Penawaran Belajar Mandiri | Tetap dibalik (gambar di kanan), proporsi disamakan dengan versi yang disetujui: grid 3:2, lebar gambar `max-w-[16rem]` |
 | Mandiri Belajar | Hapus teks "Fleksibel, Efektif, Tetap Terbimbing." |
 
 🐞 **Bug ikon ditemukan & diperbaiki:** `fa-file-certificate` hanya tersedia di **Font Awesome 6 Pro** (berbayar), sedangkan website memakai **FA 6.5.1 Free** → ikon tidak ter-render (hanya lingkaran). Diganti ke **`fa-certificate`** (tersedia di Free, `content:"\f0a3"`).

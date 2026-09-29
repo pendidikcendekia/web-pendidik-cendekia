@@ -380,64 +380,52 @@ export default function PelatihanTerbaruPage() {
       </section>
 
       {/* ===== CONTOH SERTIFIKAT KEGIATAN ===== */}
-      <section id="contoh-sertifikat" className="py-6 md:py-12 bg-krem">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <span className="inline-block bg-white text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
-              CONTOH SERTIFIKAT
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Contoh Sertifikat Kegiatan
-            </h2>
-            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-krem max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2">
-              <div className="bg-krem p-3 flex items-center justify-center">
-                <img
-                  src="/assets/flyer/Contoh-Sertifikat.webp"
-                  alt="Contoh Sertifikat Kegiatan Pendidik Cendekia"
-                  loading="lazy"
-                  className="w-full max-w-xs h-auto rounded-2xl shadow-2xl"
-                />
-              </div>
-              <div className="p-6 md:p-10 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-biru mb-3">
-                  Sertifikat dapat di Validasi
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Setiap peserta memperoleh e-sertifikat atas namanya sendiri.
-                </p>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-start gap-3">
-                    <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="text-gray-600 text-sm">
-                      Cek keabsahan cukup dengan nama yang terdaftar
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="text-gray-600 text-sm">
-                      Hasil pengecekan langsung tertera di halaman
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
-                      <i className="fas fa-check"></i>
-                    </span>
-                    <span className="text-gray-600 text-sm">
-                      Dikeluarkan resmi oleh PT Cipta Arah Cendekia
-                    </span>
-                  </li>
-                </ul>
+      <section
+        id="contoh-sertifikat"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+      >
+        <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-krem">
+          <div className="grid md:grid-cols-2">
+            <div className="p-6 md:p-10 flex flex-col justify-center">
+              <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-3 py-1 rounded-full mb-4 self-start">
+                CONTOH SERTIFIKAT
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-biru mb-3">
+                Sertifikat dapat di Validasi
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Setiap peserta memperoleh e-sertifikat atas namanya sendiri.
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Cek keabsahan cukup dengan nama yang terdaftar
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Hasil pengecekan langsung tertera di halaman
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-white ring-2 ring-buah text-buah flex items-center justify-center text-xs">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Dikeluarkan resmi oleh PT Cipta Arah Cendekia
+                  </span>
+                </li>
+              </ul>
+              <div>
                 <Link
                   href="/layanan-member"
-                  className="bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center self-start"
+                  className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                 >
                   Validasi Sertifikat
                 </Link>
@@ -445,6 +433,14 @@ export default function PelatihanTerbaruPage() {
                   No. AHU-037669.AH.01.30.Tahun 2025
                 </p>
               </div>
+            </div>
+            <div className="order-first md:order-last bg-krem p-3 flex items-center justify-center">
+              <img
+                src="/assets/flyer/Contoh-Sertifikat.webp"
+                alt="Contoh Sertifikat Kegiatan Pendidik Cendekia"
+                loading="lazy"
+                className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -551,7 +547,7 @@ export default function PelatihanTerbaruPage() {
       {/* ===== PENAWARAN MANDIRI BELAJAR ===== */}
       <section id="penawaran-mandiri-belajar" className="py-6 md:py-12 bg-krem">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden max-w-5xl mx-auto">
+          <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden">
             <div className="grid md:grid-cols-5">
               <div className="md:col-span-3 p-6 md:p-10 flex flex-col justify-center">
                 <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-4 self-start">
@@ -614,12 +610,12 @@ export default function PelatihanTerbaruPage() {
                   </Link>
                 </div>
               </div>
-              <div className="md:col-span-2 bg-krem p-6 flex items-center justify-center">
+              <div className="order-first md:order-last md:col-span-2 bg-krem p-6 flex items-center justify-center">
                 <img
                   src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
                   alt="Flyer Mandiri Belajar Pendidik Cendekia"
                   loading="lazy"
-                  className="w-full max-w-[15rem] h-auto rounded-2xl shadow-xl"
+                  className="w-full max-w-[16rem] h-auto rounded-2xl shadow-xl"
                 />
               </div>
             </div>
