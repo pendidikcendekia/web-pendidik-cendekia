@@ -38,13 +38,13 @@ export default function Beranda() {
                   href="/program/pelatihan-terbaru#daftar-pelatihan"
                   className="bg-white text-buah px-8 py-4 rounded-full font-bold hover:bg-krem transition text-center"
                 >
-                  Daftar Sekarang →
+                  Lihat Jadwal Pelatihan →
                 </Link>
                 <Link
                   href="/layanan-member"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-buah transition text-center"
                 >
-                  Lihat Detail
+                  Validasi Sertifikat
                 </Link>
               </div>
             </div>

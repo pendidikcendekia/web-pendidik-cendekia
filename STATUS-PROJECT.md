@@ -39,6 +39,21 @@ public/_headers         → cache aset + security header
 | apple-touch-icon | — | 28 KB (baru) |
 | icon-512.webp | — | 41 KB (PWA) |
 
+### Perbaikan Lanjutan (30 September 2026)
+Koreksi setelah pengecekan user:
+
+| Item | Perbaikan |
+|---|---|
+| Tombol hero Beranda | "Lihat Jadwal Pelatihan" (bukan "Daftar Sekarang") & **"Validasi Sertifikat"** (bukan "Lihat Detail") |
+| Contoh Sertifikat | Desain diubah seperti "PELATIHAN TERDEKAT" — gambar kiri (kecil), keterangan kanan. Judul jadi **"Sertifikat dapat di Validasi"** |
+| Validasi | Cek berdasarkan **nama yang terdaftar**, bukan nomor sertifikat |
+| Penawaran Belajar Mandiri | Posisi dibalik — **gambar di kanan** |
+| Mandiri Belajar | Hapus teks "Fleksibel, Efektif, Tetap Terbimbing." |
+
+🐞 **Bug ikon ditemukan & diperbaiki:** `fa-file-certificate` hanya tersedia di **Font Awesome 6 Pro** (berbayar), sedangkan website memakai **FA 6.5.1 Free** → ikon tidak ter-render (hanya lingkaran). Diganti ke **`fa-certificate`** (tersedia di Free, `content:"\f0a3"`).
+
+⚠️ **Ingat untuk ke depan:** sebelum pakai ikon Font Awesome baru, pastikan nama ikon ada di [FA Free](https://fontawesome.com/search?o=r&m=free&f=classic) — jangan asumsikan semua nama tersedia.
+
 ### File yang Sudah Dihapus
 ```
 layanan-member.html      (sisa static lama)

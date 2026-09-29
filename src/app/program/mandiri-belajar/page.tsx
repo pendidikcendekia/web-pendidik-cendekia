@@ -70,9 +70,6 @@ export default function MandiriBelajarPage() {
               <h1 className="text-3xl md:text-4xl font-bold text-biru mb-3">
                 Belajar Mandiri, Fasilitas Lengkap
               </h1>
-              <p className="text-buah font-semibold mb-2">
-                Fleksibel, Efektif, Tetap Terbimbing.
-              </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Belajar melalui rekaman dan materi kapan saja, sekaligus
                 mendapatkan Sertifikat dan pendampingan dalam grup diskusi.
@@ -102,8 +99,8 @@ export default function MandiriBelajarPage() {
                   <p className="font-bold text-biru text-xs">Grup Diskusi</p>
                 </div>
                 <div className="bg-krem rounded-2xl p-4 text-center relative">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm ring-2 ring-buah/40">
-                    <i className="fas fa-file-certificate text-xl text-buah"></i>
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm ring-2 ring-buah">
+                    <i className="fas fa-certificate text-xl text-buah"></i>
                   </div>
                   <span className="absolute top-1 right-1 bg-buah text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">
                     Resmi

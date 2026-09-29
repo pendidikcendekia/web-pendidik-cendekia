@@ -74,7 +74,7 @@ export default function TentangPage() {
             </p>
             <div className="grid grid-cols-2 gap-3 mt-6">
               <div className="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
-                <div className="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <div className="w-11 h-11 bg-white ring-2 ring-buah rounded-full flex items-center justify-center mx-auto mb-2">
                   <i className="fas fa-building-columns text-buah text-xl"></i>
                 </div>
                 <p className="text-xs font-semibold text-biru">
@@ -82,7 +82,7 @@ export default function TentangPage() {
                 </p>
               </div>
               <div className="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
-                <div className="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <div className="w-11 h-11 bg-white ring-2 ring-buah rounded-full flex items-center justify-center mx-auto mb-2">
                   <i className="fas fa-chalkboard-user text-buah text-xl"></i>
                 </div>
                 <p className="text-xs font-semibold text-biru">
@@ -90,15 +90,15 @@ export default function TentangPage() {
                 </p>
               </div>
               <div className="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
-                <div className="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
-                  <i className="fas fa-file-certificate text-buah text-xl"></i>
+                <div className="w-11 h-11 bg-white ring-2 ring-buah rounded-full flex items-center justify-center mx-auto mb-2">
+                  <i className="fas fa-certificate text-buah text-xl"></i>
                 </div>
                 <p className="text-xs font-semibold text-biru">
                   Sertifikat Dapat Divalidasi
                 </p>
               </div>
               <div className="bg-krem rounded-2xl p-4 text-center hover:shadow-md transition">
-                <div className="w-11 h-11 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
+                <div className="w-11 h-11 bg-white ring-2 ring-buah rounded-full flex items-center justify-center mx-auto mb-2">
                   <i className="fas fa-people-group text-buah text-xl"></i>
                 </div>
                 <p className="text-xs font-semibold text-biru">
