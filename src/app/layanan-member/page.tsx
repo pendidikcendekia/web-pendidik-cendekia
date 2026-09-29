@@ -370,7 +370,7 @@ export default function LayananMemberPage() {
                   href="#belajar-mandiri"
                   className="mt-6 inline-block bg-buah text-white font-bold px-7 py-3.5 rounded-full hover:bg-biru transition"
                 >
-                  Lihat Penawaran Belajar Mandiri{" "}
+                  Lihat Penawaran Mandiri Belajar{" "}
                   <i className="fas fa-arrow-down ml-1.5"></i>
                 </a>
               </div>
@@ -401,13 +401,13 @@ export default function LayananMemberPage() {
               <div className="w-16 h-16 bg-buah text-white rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-graduation-cap text-2xl"></i>
               </div>
-              <h3 className="font-bold text-biru text-lg">Belajar Mandiri</h3>
+              <h3 className="font-bold text-biru text-lg">Mandiri Belajar</h3>
               <p className="text-gray-500 text-sm mt-2 mb-6 leading-relaxed flex-1">
                 Belajar sesuai ritme Anda tanpa terikat jadwal. Selesaikan materi
                 pilihan, lalu peroleh sertifikat resmi Pendidik Cendekia.
               </p>
               <a
-                href="/program/belajar-mandiri"
+                href="/program/mandiri-belajar"
                 className="bg-buah text-white font-bold px-6 py-3 rounded-full hover:bg-biru transition text-sm"
               >
                 <i className="fas fa-play mr-1.5"></i>Mulai Belajar Mandiri

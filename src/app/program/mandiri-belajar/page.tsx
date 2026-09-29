@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function BelajarMandiriPage() {
+export default function MandiriBelajarPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ export default function BelajarMandiriPage() {
     }
 
     const msg = encodeURIComponent(
-      "Halo Admin Pendidik Cendekia, saya ingin mendaftar Program Belajar Mandiri.\n" +
+      "Halo Admin Pendidik Cendekia, saya ingin mengajukan Fasilitas Mandiri Belajar.\n" +
         "Nama: " +
         name +
         "\n" +
@@ -59,7 +59,7 @@ export default function BelajarMandiriPage() {
             <div className="flex justify-center">
               <img
                 src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
-                alt="Flyer Belajar Mandiri"
+                alt="Flyer Mandiri Belajar"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
             </div>
@@ -68,16 +68,14 @@ export default function BelajarMandiriPage() {
                 PROGRAM BELAJAR MANDIRI
               </span>
               <h1 className="text-3xl md:text-4xl font-bold text-biru mb-3">
-                Belajar Kapan Saja, di Mana Saja!
+                Belajar Mandiri, Fasilitas Lengkap
               </h1>
               <p className="text-buah font-semibold mb-2">
                 Fleksibel, Efektif, Tetap Terbimbing.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Program belajar mandiri dirancang bagi Anda yang ingin
-                meningkatkan kompetensi secara fleksibel melalui akses rekaman
-                dan materi berkualitas, dengan tetap mendapatkan bimbingan
-                intensif dari mentor di dalam grup diskusi.
+                Belajar melalui rekaman dan materi kapan saja, sekaligus
+                mendapatkan Sertifikat dan pendampingan dalam grup diskusi.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -116,13 +114,13 @@ export default function BelajarMandiriPage() {
 
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="#form-daftar"
+                  href="#formulir"
                   className="bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                 >
-                  Daftar Program
+                  Ajukan Fasilitas
                 </a>
                 <a
-                  href="#daftar-materi"
+                  href="#pilihan-tema"
                   className="border-2 border-buah text-buah font-bold px-8 py-3 rounded-full hover:bg-buah hover:text-white transition text-center"
                 >
                   Lihat Materi
@@ -133,81 +131,20 @@ export default function BelajarMandiriPage() {
         </div>
       </section>
 
-      {/* ===== ALUR PROGRAM ===== */}
-      <section className="py-6 md:py-12 bg-krem">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <span className="inline-block bg-white text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
-              ALUR PROGRAM
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Alur Program
-            </h2>
-            <p className="text-gray-500 mt-3">
-              Empat langkah mudah untuk mulai belajar bersama
-            </p>
-            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
-          </div>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
-              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                1
-              </div>
-              <h3 className="font-bold text-biru text-lg mb-2">Daftar</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Isi formulir pendaftaran, admin konfirmasi lewat WhatsApp.
-              </p>
-            </div>
-            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
-              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                2
-              </div>
-              <h3 className="font-bold text-biru text-lg mb-2">
-                Akses Materi &amp; Rekaman
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Materi dan rekaman pelatihan langsung terbuka untuk dipelajari.
-              </p>
-            </div>
-            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
-              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                3
-              </div>
-              <h3 className="font-bold text-biru text-lg mb-2">
-                Gabung Grup Diskusi
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Diskusi dan bimbingan intensif bersama mentor.
-              </p>
-            </div>
-            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
-              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                4
-              </div>
-              <h3 className="font-bold text-biru text-lg mb-2">
-                Terima Sertifikat
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Sertifikat resmi PT Cipta Arah Cendekia dikirim.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== FORM PENDAFTARAN BELAJAR MANDIRI ===== */}
-      <section id="form-daftar" className="py-6 md:py-12 bg-white">
+      {/* ===== PENDAFTARAN: PENGAJUAN FASILITAS ===== */}
+      <section id="formulir" className="py-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
               PENDAFTARAN
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Formulir Pendaftaran
+              Pengajuan Fasilitas Mandiri Belajar
             </h2>
             <p className="text-gray-600 mt-3 max-w-xl mx-auto">
-              Siap belajar? Isi formulir di bawah, tim kami akan menghubungi
-              Anda melalui WhatsApp untuk konfirmasi.
+              Sudah pernah mengikuti pelatihan? Ajukan akses materi dan
+              pendampingan belajar mandiri di bawah, tim kami akan menghubungi
+              Anda melalui WhatsApp.
             </p>
             <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
           </div>
@@ -216,7 +153,8 @@ export default function BelajarMandiriPage() {
             <div className="bg-krem rounded-3xl border border-buah/20 p-6 md:p-8">
               <div className="bg-biru text-white rounded-2xl px-5 py-4 mb-6 shadow-lg shadow-biru/40 border-b-4 border-biru/60">
                 <h2 className="text-xl md:text-2xl font-bold">
-                  <i className="fas fa-pen-to-square mr-2"></i>Daftar Program
+                  <i className="fas fa-pen-to-square mr-2"></i>Pengajuan
+                  Fasilitas Mandiri Belajar
                 </h2>
                 <p className="text-white/80 text-sm mt-1">
                   Isi data di bawah, klik Kirim. Data otomatis terkirim ke
@@ -318,19 +256,80 @@ export default function BelajarMandiriPage() {
         </div>
       </section>
 
-      {/* ===== DAFTAR MATERI ===== */}
-      <section id="daftar-materi" className="py-6 md:py-12 bg-white">
+      {/* ===== ALUR PROGRAM ===== */}
+      <section className="py-6 md:py-12 bg-krem">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="inline-block bg-white text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
+              ALUR PROGRAM
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-biru">
+              Alur Program
+            </h2>
+            <p className="text-gray-500 mt-3">
+              Empat langkah mudah untuk mulai belajar bersama
+            </p>
+            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                1
+              </div>
+              <h3 className="font-bold text-biru text-lg mb-2">Daftar</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Isi formulir pendaftaran, admin konfirmasi lewat WhatsApp.
+              </p>
+            </div>
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                2
+              </div>
+              <h3 className="font-bold text-biru text-lg mb-2">
+                Akses Materi &amp; Rekaman
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Materi dan rekaman pelatihan langsung terbuka untuk dipelajari.
+              </p>
+            </div>
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                3
+              </div>
+              <h3 className="font-bold text-biru text-lg mb-2">
+                Gabung Grup Diskusi
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Diskusi dan bimbingan intensif bersama mentor.
+              </p>
+            </div>
+            <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
+              <div className="w-16 h-16 bg-buah text-white text-2xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                4
+              </div>
+              <h3 className="font-bold text-biru text-lg mb-2">
+                Terima Sertifikat
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Sertifikat resmi PT Cipta Arah Cendekia dikirim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PILIHAN TEMA: AKSES MATERI ===== */}
+      <section id="pilihan-tema" className="py-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
-              DAFTAR MATERI
+              PILIHAN TEMA
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Pilih Topik Belajar Anda
+              Pilihan Tema: Akses Materi
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Topik terlengkap yang bisa dipelajari mandiri, kapan saja dan di
-              mana saja.
+              Materi yang Telah Berlangsung
             </p>
             <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
           </div>
@@ -444,13 +443,13 @@ export default function BelajarMandiriPage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#form-daftar"
+              href="#formulir"
               className="bg-buah text-white px-8 py-4 rounded-full font-bold hover:bg-biru transition text-center"
             >
-              Daftar Sekarang
+              Ajukan Fasilitas
             </a>
             <a
-              href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20berkonsultasi%20memilih%20program%20belajar%20mandiri%20yang%20sesuai."
+              href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20berkonsultasi%20tentang%20Fasilitas%20Mandiri%20Belajar."
               target="_blank"
               className="border-2 border-buah text-buah px-8 py-4 rounded-full font-bold hover:bg-buah hover:text-white transition text-center"
             >

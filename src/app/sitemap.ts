@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${base}/program/belajar-mandiri`,
+      url: `${base}/program/mandiri-belajar`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,

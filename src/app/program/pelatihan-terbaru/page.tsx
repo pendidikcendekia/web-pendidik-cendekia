@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function PelatihanTerbaruPage() {
@@ -60,22 +61,22 @@ export default function PelatihanTerbaruPage() {
     <>
       {/* ===== HERO PELATIHAN TERBARU ===== */}
       <section className="hero-orange relative overflow-hidden text-white">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-          <p className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            <i className="fas fa-calendar-check mr-1"></i>Update Agustus 2026
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
+          <p className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
+            <i className="fas fa-calendar-check mr-1"></i>PROGRAM PELATIHAN
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">
             Pelatihan Terbaru
           </h1>
-          <p className="text-white/90 text-lg max-w-2xl mb-6">
-            Tingkatkan kompetensi mengajarmu lewat webinar, workshop, dan seminar
-            bersertifikat bersama praktisi dan pakar pendidikan.
+          <p className="text-white/95 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+            Lihat berbagai pelatihan yang akan segera dilaksanakan beserta
+            informasi jadwal dan programnya.
           </p>
           <a
             href="#daftar-pelatihan"
-            className="inline-block bg-white text-[#f75624] font-bold px-6 py-3 rounded-full hover:bg-[#16528F] hover:text-white transition"
+            className="mt-8 inline-block bg-white text-[#f75624] font-bold px-8 py-3 rounded-full hover:bg-[#16528F] hover:text-white transition"
           >
-            Lihat Pelatihan
+            Daftar Pelatihan Terbaru
           </a>
         </div>
       </section>
@@ -147,10 +148,10 @@ export default function PelatihanTerbaruPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-8">
             <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
-              DETAIL KEGIATAN
+              FORMULIR &amp; DETAIL
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Detail Kegiatan
+              Formulir dan Detail Kegiatan
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
               Informasi lengkap pelatihan dan pendaftaran
@@ -166,8 +167,8 @@ export default function PelatihanTerbaruPage() {
             >
               <div className="bg-biru text-white rounded-2xl px-5 py-4 mb-6">
                 <h3 className="text-xl md:text-2xl font-bold">
-                  <i className="fas fa-pen-to-square mr-2"></i>Formulir
-                  Pendaftaran
+                  <i className="fas fa-pen-to-square mr-2"></i>Pendaftaran
+                  Pelatihan Terbaru
                 </h3>
                 <p className="text-white/80 text-sm mt-1">
                   Isi data di bawah, klik Kirim. Data otomatis terkirim ke
@@ -333,22 +334,42 @@ export default function PelatihanTerbaruPage() {
                 <div
                   className={`${openAccordion === 2 ? "" : "hidden"} px-5 py-4 text-gray-600 leading-relaxed`}
                 >
-                  <ul className="space-y-2">
-                    <li>
-                      <i className="fas fa-file-certificate text-buah mr-2"></i>
-                      Sertifikat pelatihan digital
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="shrink-0 w-9 h-9 rounded-full bg-buah/10 text-buah flex items-center justify-center">
+                        <i className="fas fa-file-certificate"></i>
+                      </span>
+                      <span className="text-gray-700">
+                        <strong className="text-biru">E-Sertifikat Pelatihan</strong>{" "}
+                        terbit atas nama peserta, dapat divalidasi secara online.
+                      </span>
                     </li>
-                    <li>
-                      <i className="fas fa-download text-buah mr-2"></i>Materi dan
-                      rekaman kelas
+                    <li className="flex items-start gap-3">
+                      <span className="shrink-0 w-9 h-9 rounded-full bg-buah/10 text-buah flex items-center justify-center">
+                        <i className="fas fa-play-circle"></i>
+                      </span>
+                      <span className="text-gray-700">
+                        <strong className="text-biru">Rekaman &amp; materi</strong>{" "}
+                        kelas yang bisa diakses kapan saja setelah pelatihan.
+                      </span>
                     </li>
-                    <li>
-                      <i className="fas fa-comments text-buah mr-2"></i>Akses grup
-                      diskusi peserta
+                    <li className="flex items-start gap-3">
+                      <span className="shrink-0 w-9 h-9 rounded-full bg-buah/10 text-buah flex items-center justify-center">
+                        <i className="fas fa-comments"></i>
+                      </span>
+                      <span className="text-gray-700">
+                        <strong className="text-biru">Grup diskusi peserta</strong>{" "}
+                        untuk bertanya dan berbagi praktik bersama mentor.
+                      </span>
                     </li>
-                    <li>
-                      <i className="fas fa-headset text-buah mr-2"></i>
-                      Pendampingan via WhatsApp
+                    <li className="flex items-start gap-3">
+                      <span className="shrink-0 w-9 h-9 rounded-full bg-buah/10 text-buah flex items-center justify-center">
+                        <i className="fas fa-headset"></i>
+                      </span>
+                      <span className="text-gray-700">
+                        <strong className="text-biru">Pendampingan WhatsApp</strong>{" "}
+                        langsung dari mentor untuk peserta.
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -358,8 +379,94 @@ export default function PelatihanTerbaruPage() {
         </div>
       </section>
 
+      {/* ===== CONTOH SERTIFIKAT KEGIATAN ===== */}
+      <section id="contoh-sertifikat" className="py-6 md:py-12 bg-krem">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="inline-block bg-white text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
+              CONTOH SERTIFIKAT
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-biru">
+              Contoh Sertifikat Kegiatan
+            </h2>
+            <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
+              Bentuk sertifikat yang Anda terima setelah mengikuti pelatihan.
+              Nomor sertifikat dapat dicek kapan saja.
+            </p>
+            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="flex flex-col items-center">
+              <div className="w-full max-w-sm rounded-xl overflow-hidden shadow-2xl">
+                <img
+                  src="/assets/flyer/Contoh-Sertifikat.webp"
+                  alt="Contoh Sertifikat Kegiatan Pendidik Cendekia"
+                  loading="lazy"
+                  className="w-full h-auto"
+                />
+                <div className="bg-biru text-white text-center font-bold py-2.5">
+                  Contoh Sertifikat
+                </div>
+              </div>
+              <div className="w-full max-w-sm text-center pt-3">
+                <p className="text-gray-500 text-xs">
+                  Sertifikat dikeluarkan oleh PT Cipta Arah Cendekia
+                </p>
+                <p className="text-gray-500 text-xs mt-0.5">
+                  Nomor: AHU-037669.AH.01.30.Tahun 2025
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-biru mb-4">
+                Sudah Ikut Pelatihan?
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Setiap peserta pelatihan memperoleh sertifikat atas namanya sendiri.
+                Jika Anda sudah pernah mengikuti kegiatan Pendidik Cendekia,
+                cek keabsahan sertifikat Anda secara online.
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-9 h-9 rounded-full bg-white text-buah flex items-center justify-center shadow-sm">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Cek keabsahan cukup dengan memasukkan nomor sertifikat
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-9 h-9 rounded-full bg-white text-buah flex items-center justify-center shadow-sm">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Hasil pengecekan langsung tertera di halaman
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="shrink-0 w-9 h-9 rounded-full bg-white text-buah flex items-center justify-center shadow-sm">
+                    <i className="fas fa-check"></i>
+                  </span>
+                  <span className="text-gray-600 text-sm">
+                    Berlaku untuk kebutuhan administratif dan pengembangan kompetensi
+                  </span>
+                </li>
+              </ul>
+              <Link
+                href="/layanan-member"
+                className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
+              >
+                Validasi Sertifikat Saya
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== PELATIHAN LAINNYA ===== */}
-      <section className="py-6 md:py-12 bg-white">
+      <section id="pelatihan-lainnya" className="py-6 md:py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
@@ -449,6 +556,85 @@ export default function PelatihanTerbaruPage() {
                   >
                     Daftar Sekarang
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== PENAWARAN MANDIRI BELAJAR ===== */}
+      <section id="penawaran-mandiri-belajar" className="py-6 md:py-12 bg-krem">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden">
+            <div className="grid md:grid-cols-5">
+              <div className="md:col-span-2 bg-white p-6 flex items-center justify-center">
+                <img
+                  src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
+                  alt="Flyer Mandiri Belajar Pendidik Cendekia"
+                  loading="lazy"
+                  className="w-full max-w-[16rem] h-auto rounded-2xl shadow-xl"
+                />
+              </div>
+              <div className="md:col-span-3 p-6 md:p-10 flex flex-col justify-center">
+                <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-4 self-start">
+                  BELAJAR MANDIRI
+                </span>
+                <h2 className="text-2xl md:text-3xl font-bold text-biru mb-3">
+                  Tak Bisa Hadir? Belajar Mandiri Tetap Bisa
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Bagi Anda yang berhalangan hadir atau ingin mengulang materi,
+                  tersedia akses rekaman dan materi belajar mandiri — lengkap
+                  dengan sertifikat dan pendampingan dalam grup diskusi.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                  <div className="flex items-center gap-3">
+                    <span className="shrink-0 w-9 h-9 rounded-full bg-krem text-buah flex items-center justify-center">
+                      <i className="fas fa-box-open"></i>
+                    </span>
+                    <span className="text-gray-700 text-sm">
+                      Akses materi &amp; rekaman
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="shrink-0 w-9 h-9 rounded-full bg-krem text-buah flex items-center justify-center">
+                      <i className="fas fa-file-certificate"></i>
+                    </span>
+                    <span className="text-gray-700 text-sm">
+                      Sertifikat pelatihan
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="shrink-0 w-9 h-9 rounded-full bg-krem text-buah flex items-center justify-center">
+                      <i className="fas fa-chalkboard-user"></i>
+                    </span>
+                    <span className="text-gray-700 text-sm">
+                      Pendampingan mentor
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="shrink-0 w-9 h-9 rounded-full bg-krem text-buah flex items-center justify-center">
+                      <i className="fas fa-users"></i>
+                    </span>
+                    <span className="text-gray-700 text-sm">
+                      Grup diskusi peserta
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href="/program/mandiri-belajar#formulir"
+                    className="bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
+                  >
+                    Ajukan Fasilitas
+                  </Link>
+                  <Link
+                    href="/program/mandiri-belajar#pilihan-tema"
+                    className="border-2 border-buah text-buah font-bold px-8 py-3 rounded-full hover:bg-buah hover:text-white transition text-center"
+                  >
+                    Lihat Pilihan Tema
+                  </Link>
                 </div>
               </div>
             </div>

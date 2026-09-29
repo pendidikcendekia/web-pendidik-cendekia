@@ -36,10 +36,10 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/program/belajar-mandiri"
+                href="/program/mandiri-belajar"
                 className="hover:text-krem transition"
               >
-                Belajar Mandiri
+                Mandiri Belajar
               </Link>
             </li>
             <li>

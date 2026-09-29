@@ -1,5 +1,5 @@
 # STATUS PROJECT — Pendidik Cendekia
-**Diperbarui: 28 September 2026, setelah migrasi Cloudflare selesai**
+**Diperbarui: 30 September 2026, setelah revisi 4 halaman sesuai catatan revisi**
 
 ---
 
@@ -44,6 +44,30 @@ public/_headers         → cache aset + security header
 layanan-member.html      (sisa static lama)
 nextjs-panduan.html      (sisa static lama)
 ```
+
+### Revisi Konten & UI (30 September 2026)
+Sumber: `Catatan Revisi Web PC.pdf`
+
+| Halaman | Perubahan |
+|---|---|
+| **Beranda** | Judul hero → "Pengembangan Kompetensi Pendidik". Urutan section: Hero → Pelatihan Terbaru → Mengapa Pendidik. Tombol "Lihat Detail" → `/layanan-member`. Tombol "Lihat Semua Karya" (baru). CTA → "Daftar Pelatihan" |
+| **Tentang** | Hero 2 paragraf + tombol "Lihat Program Kami". **Kartu Koordinator Program** (Muhammad Miftahussurur) di samping blok Visi |
+| **Pelatihan Terbaru** | Hero rata tengah. "Formulir dan Detail Kegiatan", "Pendaftaran Pelatihan Terbaru", "E-Sertifikat meageropsional". Section baru: **Contoh Sertifikat Kegiatan** + **Penawaran Mandiri Belajar** |
+| **Mandiri Belajar** | Route `belajar-mandiri` → **`mandiri-belajar`** (redirect permanen 308). Hero "Belajar Mandiri, Fasilitas Lengkap", tombol "Ajukan Fasilitas". Urutan: Hero → Program → Pendaftaran → Alur → Pilihan Tema |
+
+**Anchor penting (untuk tautan dari luar halaman):**
+```
+/program/pelatihan-terbaru#daftar-pelatihan      ← tombol "Daftar"
+/program/pelatihan-terbaru#pelatihan-lainnya     ← tombol "Lihat Semua Jadwal"
+/program/pelatihan-terbaru#detail-kegiatan       ← tombol "Lihat Detail"
+/program/mandiri-belajar#formulir                ← tombol "Ajukan Fasilitas"
+/program/mandiri-belajar#pilihan-tema            ← tombol "Lihat Pilihan Tema"
+```
+
+⚠️ **Pekerjaan yang belum selesai:**
+- Foto Koordinator Program masih **placeholder inisial "MM"**.
+  Ganti isi `<div>` bulat di `src/app/tentang/page.tsx` dengan `<img>` — layout tidak perlu diubah.
+- Review visual 4 halaman di browser (bawaan perangkat) untuk cek jarak & tampilan mobile.
 
 ---
 
@@ -151,9 +175,18 @@ src/app/robots.ts      → sitemap URL (kalau ada)
 ```
 Lalu `git push` — auto-deploy ke kedua platform.
 
-### 5. 🟡 Revisi Konten Teks
-Sesuaikan tulisan halaman agar tepat menyajikan layanan bisnis.
-Halaman: beranda, tentang, karya, program, layanan-member, kontak.
+### 5. 🟡 Revisi Konten Teks — 🟢 4 DARI 6 SELESAI
+Sumber revisi: `Catatan Revisi Web PC.pdf`
+
+| Halaman | Status |
+|---|---|
+| Beranda | ✅ Selesai (30 Sep 2026) |
+| Tentang | ✅ Selesai (30 Sep 2026) |
+| Program → Pelatihan Terbaru | ✅ Selesai (30 Sep 2026) |
+| Program → Mandiri Belajar | ✅ Selesai (30 Sep 2026) |
+| Karya | ⬜ Belum |
+| Layanan Member | ⬜ Belum |
+| Kontak | ⬜ Belum |
 
 ### 6. 🟡 Halaman Admin (Internal)
 - Satu kesatuan (bukan multi-page terpisah)
@@ -214,7 +247,7 @@ await sharp('input.png')
 │   ├── layanan-member/
 │   ├── program/
 │   │   ├── pelatihan-terbaru/
-│   │   └── belajar-mandiri/
+│   │   └── mandiri-belajar/       ← RENAME 30 Sep (dari belajar-mandiri)
 │   ├── kebijakan-privasi/
 │   ├── api/validasi/route.ts   ← satu-satunya dynamic route
 │   ├── sitemap.ts              ← PERLU diupdate domain
@@ -234,6 +267,7 @@ await sharp('input.png')
 | `PANDUAN-UPDATE.md` | Panduan update project |
 | `RIWAYAT-SESI.md` | Riwayat sesi sebelumnya |
 | `AGENTS-FASE5-POSTINGAN-ADMIN.md` | Rancangan halaman admin |
+| `Catatan Revisi Web PC.pdf` | Catatan revisi 4 halaman (sumber perubahan 30 Sep 2026) |
 | `~/RIWAYAT-CHAT-HOSTING-DOMAIN.md` | Riwayat chat panjang (127 KB) |
 | `~/ARSITEKTUR-INFRASTRUKTUR-WEBSITE.md` | Draft arsitektur (⚠️ belum disetujui) |
 

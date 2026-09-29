@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Pendidik Cendekia - Tentang Kami",
   description:
@@ -35,6 +37,24 @@ export default function TentangPage() {
             </span>
             .
           </p>
+          <p className="text-white/90 text-base md:text-lg max-w-2xl mx-auto mt-4 leading-relaxed">
+            Daftar pelatihan dan bergabung menjadi member kami untuk mengakses
+            seluruh program pengembangan kompetensi pendidik.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+            <a
+              href="/program/pelatihan-terbaru#daftar-pelatihan"
+              className="bg-white text-[#f75624] font-bold px-8 py-3 rounded-full hover:bg-[#16528F] hover:text-white transition text-center"
+            >
+              Lihat Program Kami
+            </a>
+            <Link
+              href="/program/mandiri-belajar"
+              className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-[#f75624] transition text-center"
+            >
+              Belajar Mandiri
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -110,17 +130,45 @@ export default function TentangPage() {
         </div>
       </section>
 
-      {/* ===== VISI & MISI ===== */}
+      {/* ===== VISI & KOORDINATOR ===== */}
       <section className="py-6 md:py-12 bg-krem">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#f75624] to-[#ffd954] text-white rounded-2xl p-8 md:p-12 mb-12 text-center">
-            <p className="text-3xl font-bold uppercase tracking-wide mb-3">
-              Visi
-            </p>
-            <p className="text-2xl md:text-3xl font-extrabold max-w-3xl mx-auto leading-snug">
-              &quot;Menjadi ekosistem pengembangan diri dan keterampilan yang
-              melahirkan insan cerdas, adaptif, serta berdampak.&quot;
-            </p>
+          <div className="grid lg:grid-cols-5 gap-8 mb-12 items-stretch">
+            <div className="lg:col-span-3 bg-gradient-to-br from-[#f75624] to-[#ffd954] text-white rounded-2xl p-8 md:p-12 flex flex-col justify-center text-center">
+              <p className="text-3xl font-bold uppercase tracking-wide mb-3">
+                Visi
+              </p>
+              <p className="text-2xl md:text-3xl font-extrabold max-w-3xl mx-auto leading-snug">
+                &quot;Menjadi ekosistem pengembangan diri dan keterampilan yang
+                melahirkan insan cerdas, adaptif, serta berdampak.&quot;
+              </p>
+            </div>
+
+            <div className="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-sm flex flex-col items-center text-center">
+              <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-5">
+                KOORDINATOR PROGRAM
+              </span>
+              <div className="w-32 h-32 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center mb-4 overflow-hidden">
+                <span className="text-4xl font-extrabold text-buah">MM</span>
+              </div>
+              <h3 className="text-xl font-extrabold text-biru">
+                Muhammad Miftahussurur
+              </h3>
+              <p className="text-buah font-semibold text-sm mt-1">
+                Koordinator Program
+              </p>
+              <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+                Mengelola koordinasi seluruh pelatihan, pendampingan peserta,
+                pengembangan karya Pendidik Cendekia.
+              </p>
+              <a
+                href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20bertanya%20tentang%20program%20pelatihan."
+                target="_blank"
+                className="mt-6 inline-block bg-buah text-white font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-biru transition"
+              >
+                Hubungi Koordinator
+              </a>
+            </div>
           </div>
 
           <div className="text-center mb-8">

@@ -16,7 +16,7 @@ const menuItems = [
 
 const programItems = [
   { label: "Pelatihan Terbaru", url: "/program/pelatihan-terbaru" },
-  { label: "Belajar Mandiri", url: "/program/belajar-mandiri" },
+  { label: "Mandiri Belajar", url: "/program/mandiri-belajar" },
 ];
 
 export default function Navbar() {
@@ -44,7 +44,7 @@ export default function Navbar() {
 
   const isProgramActive =
     pathname.startsWith("/program/pelatihan-terbaru") ||
-    pathname.startsWith("/program/belajar-mandiri");
+    pathname.startsWith("/program/mandiri-belajar");
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow" ref={menuRef}>

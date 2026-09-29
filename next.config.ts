@@ -23,7 +23,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/program/belajar-mandiri.html",
-        destination: "/program/belajar-mandiri",
+        destination: "/program/mandiri-belajar",
+        permanent: true,
+      },
+      {
+        source: "/program/belajar-mandiri",
+        destination: "/program/mandiri-belajar",
         permanent: true,
       },
       {

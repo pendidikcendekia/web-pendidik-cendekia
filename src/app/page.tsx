@@ -26,24 +26,25 @@ export default function Beranda() {
                 🎓 PT Cipta Arah Cendekia
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-                Digitalisasi Pembelajaran
+                Pengembangan Kompetensi Pendidik
               </h1>
               <p className="text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
-                Wadah pengembangan profesional guru di era digital melalui
-                webinar, workshop, dan mentoring yang inspiratif dan interaktif.
+                Wadah belajar dan bertumbuh bagi pendidik melalui pelatihan,
+                pembelajaran, pendampingan, dan pengembangan karya yang relevan
+                dengan kebutuhan pendidikan.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/program/pelatihan-terbaru"
+                  href="/program/pelatihan-terbaru#daftar-pelatihan"
                   className="bg-white text-buah px-8 py-4 rounded-full font-bold hover:bg-krem transition text-center"
                 >
                   Daftar Sekarang →
                 </Link>
                 <Link
-                  href="/program/pelatihan-terbaru"
+                  href="/layanan-member"
                   className="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-buah transition text-center"
                 >
-                  Lihat Jadwal
+                  Lihat Detail
                 </Link>
               </div>
             </div>
@@ -53,58 +54,6 @@ export default function Beranda() {
                 alt="Flyer Pendidik Cendekia"
                 className="w-full max-w-xs h-auto rounded-2xl shadow-2xl"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VALUE PROPOSITION */}
-      <section className="py-6 md:py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
-              KEUNGGULAN
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Mengapa Memilih Pendidik Cendekia
-            </h2>
-            <p className="text-gray-500 mt-3">
-              Kelebihan yang kami berikan untuk pengembangan Anda
-            </p>
-            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
-              <div className="text-5xl mb-4">🎓</div>
-              <h3 className="font-bold text-biru text-lg mb-2">Bersertifikat</h3>
-              <p className="text-gray-500 text-sm">
-                Setiap pelatihan dilengkapi sertifikat resmi yang dapat
-                divalidasi.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
-              <div className="text-5xl mb-4">💡</div>
-              <h3 className="font-bold text-biru text-lg mb-2">Praktis</h3>
-              <p className="text-gray-500 text-sm">
-                Materi langsung bisa dipraktikkan dalam kegiatan belajar
-                mengajar.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
-              <div className="text-5xl mb-4">🤝</div>
-              <h3 className="font-bold text-biru text-lg mb-2">Mentoring</h3>
-              <p className="text-gray-500 text-sm">
-                Pendampingan personal via WhatsApp untuk setiap peserta.
-              </p>
-            </div>
-            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
-              <div className="text-5xl mb-4">📈</div>
-              <h3 className="font-bold text-biru text-lg mb-2">
-                Mengikuti Zaman
-              </h3>
-              <p className="text-gray-500 text-sm">
-                Topik terkini: AI, kurikulum merdeka, dan pembelajaran digital.
-              </p>
             </div>
           </div>
         </div>
@@ -237,11 +186,63 @@ export default function Beranda() {
           </div>
           <div className="text-center mt-8">
             <Link
-              href="/program/pelatihan-terbaru"
+              href="/program/pelatihan-terbaru#pelatihan-lainnya"
               className="inline-block border-2 border-buah text-buah px-6 py-3 rounded-full font-semibold hover:bg-buah hover:text-white transition"
             >
               Lihat Semua Jadwal →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* VALUE PROPOSITION */}
+      <section className="py-6 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-3">
+              KEUNGGULAN
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-biru">
+              Mengapa Memilih Pendidik Cendekia
+            </h2>
+            <p className="text-gray-500 mt-3">
+              Kelebihan yang kami berikan untuk pengembangan Anda
+            </p>
+            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
+              <div className="text-5xl mb-4">🎓</div>
+              <h3 className="font-bold text-biru text-lg mb-2">Bersertifikat</h3>
+              <p className="text-gray-500 text-sm">
+                Setiap pelatihan dilengkapi sertifikat resmi yang dapat
+                divalidasi.
+              </p>
+            </div>
+            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
+              <div className="text-5xl mb-4">💡</div>
+              <h3 className="font-bold text-biru text-lg mb-2">Praktis</h3>
+              <p className="text-gray-500 text-sm">
+                Materi langsung bisa dipraktikkan dalam kegiatan belajar
+                mengajar.
+              </p>
+            </div>
+            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
+              <div className="text-5xl mb-4">🤝</div>
+              <h3 className="font-bold text-biru text-lg mb-2">Mentoring</h3>
+              <p className="text-gray-500 text-sm">
+                Pendampingan personal via WhatsApp untuk setiap peserta.
+              </p>
+            </div>
+            <div className="text-center p-6 rounded-2xl bg-krem hover:bg-orange-100 transition">
+              <div className="text-5xl mb-4">📈</div>
+              <h3 className="font-bold text-biru text-lg mb-2">
+                Mengikuti Zaman
+              </h3>
+              <p className="text-gray-500 text-sm">
+                Topik terkini: AI, kurikulum merdeka, dan pembelajaran digital.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -345,6 +346,14 @@ export default function Beranda() {
               </div>
             </div>
           </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/karya"
+              className="inline-block border-2 border-buah text-buah px-6 py-3 rounded-full font-semibold hover:bg-buah hover:text-white transition"
+            >
+              Lihat Semua Karya →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -427,15 +436,14 @@ export default function Beranda() {
             Pendidik Cendekia.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="https://wa.me/628991945123"
-              target="_blank"
+            <Link
+              href="/program/pelatihan-terbaru#daftar-pelatihan"
               className="bg-buah text-white px-8 py-4 rounded-full font-bold hover:bg-biru transition text-center"
             >
-              Daftar Sekarang
-            </a>
+              Daftar Pelatihan
+            </Link>
             <Link
-              href="/program/pelatihan-terbaru"
+              href="/program/pelatihan-terbaru#pelatihan-lainnya"
               className="border-2 border-buah text-buah px-8 py-4 rounded-full font-bold hover:bg-buah hover:text-white transition text-center"
             >
               Lihat Jadwal
