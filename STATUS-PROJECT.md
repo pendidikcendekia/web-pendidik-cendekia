@@ -119,14 +119,14 @@ Terpakai saat testing: **132 / 100.000 (0,13%)**
 ## 📋 5 COMMIT TERAKHIR
 
 ```
+2ea2809  Revisi 4 halaman sesuai Catatan Revisi Web PC
+00b95fa  Tambah STATUS-PROJECT.md: ringkasan status setelah migrasi Cloudflare
 073750c  Optimalkan logo: WebP, favicon, dan hapus file sisa
 9ca6215  Tambah Permissions-Policy header untuk_playwright hardening browser
 a84141b  Tambah konfigurasi Cloudflare Workers via OpenNext
-0c7a5a1  Tambah PANDUAN-UPDATE.md dan RIWAYAT-SESI.md
-a252464  Highlight Program hanya teks oranye; blok oranye tetap pada sub-item aktif dropdown
 ```
 
-⚠️ **Catatan:** commit `9ca6215` dan `073750c` punya pesan yang agak aneh ("_playwright"). Pesan commit tidakFunds_of_the_week_fundamental, tapi isinya sudah benar dan terverifikasi live.
+⚠️ **Catatan:** commit `9ca6215` dan `073750c` punya pesan yang agak aneh ("_playwright"). Isinya sudah benar dan terverifikasi live.
 
 ---
 
