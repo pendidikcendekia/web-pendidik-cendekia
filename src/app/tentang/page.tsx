@@ -144,38 +144,24 @@ export default function TentangPage() {
               </p>
             </div>
 
-            <div className="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-sm flex flex-col items-center text-center">
-              <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-5">
-                KOORDINATOR PROGRAM
-              </span>
-              <div className="w-32 h-32 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center mb-4 overflow-hidden">
+            <div className="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-sm flex flex-col items-center justify-center text-center">
+              <p className="text-xs font-bold uppercase tracking-[0.25em] text-buah">
+                Koordinator Pelatihan
+              </p>
+              <div className="w-48 h-48 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center my-7 overflow-hidden">
                 <img
                   src="/assets/foto_webp/koordinator-miftahussurur.webp"
-                  alt="Muhammad Miftahussurur, Koordinator Program Pendidik Cendekia"
-                  width={128}
-                  height={128}
+                  alt="Muhammad Miftahussurur, Koordinator Pelatihan Pendidik Cendekia"
+                  width={192}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-extrabold text-biru">
+              <h3 className="text-2xl font-extrabold text-biru">
                 Muhammad Miftahussurur
               </h3>
-              <p className="text-buah font-semibold text-sm mt-1">
-                Koordinator Program
-              </p>
-              <p className="text-gray-600 text-sm mt-4 leading-relaxed">
-                Mengelola koordinasi seluruh pelatihan, pendampingan peserta,
-                pengembangan karya Pendidik Cendekia.
-              </p>
-              <a
-                href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20bertanya%20tentang%20program%20pelatihan."
-                target="_blank"
-                className="mt-6 inline-block bg-buah text-white font-semibold px-6 py-2.5 rounded-full text-sm hover:bg-biru transition"
-              >
-                Hubungi Koordinator
-              </a>
             </div>
           </div>
 
