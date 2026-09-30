@@ -312,25 +312,6 @@ export default async function HalamanMitra({
           </div>
         </div>
       </section>
-
-      {/* ===== AJAKAN MENDAFTAR ===== */}
-      <section className="py-10 md:py-14 bg-buah text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold">
-            Kuota {sesi.kuota} &middot; {sesi.hari}
-          </h2>
-          <p className="text-white/90 mt-2">
-            Jangan sampai kehabisan tempat. Daftar sekarang juga bersama{" "}
-            {m.nama}.
-          </p>
-          <a
-            href="#formulir"
-            className="mt-6 inline-block bg-white text-[#f75624] font-bold px-8 py-3 rounded-full hover:bg-[#16528F] hover:text-white transition"
-          >
-            Daftar Sekarang
-          </a>
-        </div>
-      </section>
     </>
   );
 }

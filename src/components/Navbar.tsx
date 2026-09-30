@@ -23,6 +23,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const tanpaWa = pathname.startsWith("/mitra");
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -132,15 +133,17 @@ export default function Navbar() {
           </nav>
 
           {/* Aksi Kanan */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a
-              href="https://wa.me/628991945123"
-              target="_blank"
-              className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
-            >
-              Hubungi WA
-            </a>
-          </div>
+          {!tanpaWa && (
+            <div className="hidden lg:flex items-center gap-3">
+              <a
+                href="https://wa.me/628991945123"
+                target="_blank"
+                className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
+              >
+                Hubungi WA
+              </a>
+            </div>
+          )}
 
           {/* Tombol Menu HP */}
           <button
@@ -225,14 +228,16 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <a
-            href="https://wa.me/628991945123"
-            target="_blank"
-            onClick={() => setMobileOpen(false)}
-            className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
-          >
-            Hubungi WA
-          </a>
+          {!tanpaWa && (
+            <a
+              href="https://wa.me/628991945123"
+              target="_blank"
+              onClick={() => setMobileOpen(false)}
+              className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
+            >
+              Hubungi WA
+            </a>
+          )}
         </div>
       </div>
     </header>

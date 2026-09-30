@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Mitra, SesiPelatihan } from "@/data/pelatihan";
-import { setAdminAktif } from "@/components/WhatsAppFloat";
 
 type Props = {
   m: Mitra;
@@ -27,13 +26,6 @@ export default function MitraFormulir({ m, sesi }: Props) {
   const [wa, setWa] = useState("");
   const [instansi, setInstansi] = useState("");
   const [provinsi, setProvinsi] = useState("");
-
-  useEffect(() => {
-    setAdminAktif(
-      m.wa,
-      `Halo ${m.nama}, saya ingin bertanya tentang ${sesi.tema}.`
-    );
-  }, [m.wa, m.nama, sesi.tema]);
 
   function kirim(e: React.FormEvent) {
     e.preventDefault();
