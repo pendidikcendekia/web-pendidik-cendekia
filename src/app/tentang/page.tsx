@@ -145,23 +145,28 @@ export default function TentangPage() {
             </div>
 
             <div className="lg:col-span-2 bg-white rounded-2xl p-6 md:p-8 shadow-sm flex flex-col items-center justify-center text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.25em] text-buah">
-                Koordinator Pelatihan
-              </p>
-              <div className="w-48 h-48 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center my-7 overflow-hidden">
+              <div className="w-64 h-64 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center overflow-hidden">
                 <img
                   src="/assets/foto_webp/koordinator-miftahussurur.webp"
                   alt="Muhammad Miftahussurur, Koordinator Pelatihan Pendidik Cendekia"
-                  width={192}
-                  height={192}
+                  width={256}
+                  height={256}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-extrabold text-biru">
+              <h3 className="text-2xl font-extrabold text-biru mt-6">
                 Muhammad Miftahussurur
               </h3>
+              <div className="w-16 h-0.5 bg-buah/30 rounded-full my-5"></div>
+              <p className="text-buah font-bold text-sm uppercase tracking-wider">
+                Koordinator Pelatihan
+              </p>
+              <p className="text-gray-600 text-sm mt-3 leading-relaxed max-w-xs">
+                Mengelola koordinasi seluruh pelatihan, pendampingan peserta,
+                dan pengembangan karya Pendidik Cendekia.
+              </p>
             </div>
           </div>
 
