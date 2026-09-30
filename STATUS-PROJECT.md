@@ -49,6 +49,7 @@ Koreksi setelah pengecekan user:
 | Validasi | Cek berdasarkan **nama yang terdaftar**, bukan nomor sertifikat |
 | Penawaran Belajar Mandiri | Tetap dibalik (gambar di kanan), proporsi disamakan dengan versi yang disetujui: grid 3:2, lebar gambar `max-w-[16rem]` |
 | Mandiri Belajar | Hapus teks "Fleksibel, Efektif, Tetap Terbimbing." |
+| **Foto Koordinator** | Placeholder inisial "MM" → foto asli Muhammad Miftahussurur. Dikompresi 524 KB PNG → **9,2 KB** WebP (400×400, hemat 98%). `object-cover` + `rounded-full` otomatis memotong jadi lingkaran |
 
 🐞 **Bug ikon ditemukan & diperbaiki:** `fa-file-certificate` hanya tersedia di **Font Awesome 6 Pro** (berbayar), sedangkan website memakai **FA 6.5.1 Free** → ikon tidak ter-render (hanya lingkaran). Diganti ke **`fa-certificate`** (tersedia di Free, `content:"\f0a3"`).
 
@@ -80,9 +81,46 @@ Sumber: `Catatan Revisi Web PC.pdf`
 ```
 
 ⚠️ **Pekerjaan yang belum selesai:**
-- Foto Koordinator Program masih **placeholder inisial "MM"**.
-  Ganti isi `<div>` bulat di `src/app/tentang/page.tsx` dengan `<img>` — layout tidak perlu diubah.
 - Review visual 4 halaman di browser (bawaan perangkat) untuk cek jarak & tampilan mobile.
+
+### 🚨 Auto-Deploy Cloudflare Terputus (30 Sep 2026)
+Push `7447915` **tidak** terkirim ke Cloudflare. Gejalanya:
+- `wrangler deployments list` → deployment terakhir masih 28–29 Sep 2026
+- Tidak ada folder `.github/workflows/` (jadi **bukan** GitHub Actions)
+- `Source: Upload` →means deploy datang dari CLI, bukan dari build Git
+
+**Penyebab yang mungkin:** koneksi GitHub di Cloudflare Workers Builds terputus.
+**Perbaikan:** Cloudflare Dashboard → Worker `pendidik-cendekia` → tab **Builds** → cek koneksi repo.
+
+**Sementara ini** deploy manual tetap berfungsi normal:
+```bash
+npm run deploy     # opennextjs-cloudflare build && opennextjs-cloudflare deploy
+```
+⚠️ Selalu cek `https://pendidik-cendekia.next-temp.workers.dev` setelah push — kalau isinya masih versi lama, langsung `npm run deploy`.
+
+### 🌐 Keputusan Domain (30 Sep 2026)
+Rencana: `pendidik.cendekia.id` + `cendekia.id` + `ikal.cendekia.id`
+
+❌ **Tidak bisa dipakai** — hasil pengecekan DNS:
+| Domain | Kenapa |
+|---|---|
+| `cendekia.id` | **Sudah terdaftar** sejak 1993, registrar PT Digital Registra Indonesia, berakhir 28 Okt 2026. Dipakai aktif: Cloudflare Email Routing + Brevo. Status `clientTransferProhibited` + `serverTransferProhibited` → **tidak bisa diambil alih** |
+| `pendidik.cendekia.id` | **Mustahil** — subdomain hanya bisa dibuat di bawah domain milik sendiri. Bukan soal harga, tapi DNS + sertifikat SSL |
+
+✅ **Keputusan: pakai `pendidikcendekia.id`** (sudah dicek: belum ada nameserver → tersedia).
+Semua varian `cendekia.*` sudah habis: `.id` `.co.id` `.web.id` `.my.id` `.or.id` `.net` `.org` `.biz` `.app`
+
+Konvensi alamat yang disepakati:
+| Alamat | Isi |
+|---|---|
+| `pendidikcendekia.id` | Unit pelatihan guru (situs ini) |
+| `ciptaarahcendekia.id` | Induk Cendekia — **belum dibeli** (kosong, kalau diperlukan) |
+| `ikal.cendekia.id` | Unit pengembangan — **belum ada** |
+
+**Yang belum dikerjakan:** beli domainnya, arahkan NS ke Cloudflare, daftarkan sebagai *Custom Domain* di Worker.
+Setelah itu tidak perlu ubah kode sedikit pun — Worker tetap sama.
+
+💡 Catatan: subdomain gratis, jadi kalau nanti punya domain induk, `pendidik.` dan `ikal.` tidak menambah biaya.
 
 ---
 
