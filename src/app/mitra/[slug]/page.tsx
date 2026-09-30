@@ -66,8 +66,10 @@ export default async function HalamanMitra({
           <p className="inline-block bg-white/20 text-sm font-semibold px-4 py-1.5 rounded-full mb-5">
             <i className="fas fa-calendar-check mr-1"></i>PROGRAM PELATIHAN
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">
-            Pelatihan Pengembangan Kompetensi
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-5 leading-tight">
+            <span className="md:whitespace-nowrap">
+              Pelatihan Pengembangan Kompetensi
+            </span>
           </h1>
           <p className="text-white/95 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
             {sesi.deskripsi}
@@ -190,11 +192,11 @@ export default async function HalamanMitra({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Akses Fasilitas Pelatihan
+              Mandiri Belajar
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Materi dan rekaman pelatihan yang telah berlangsung, lengkap dengan
-              pendampingan mentor dan e-sertifikat.
+              Belum sempat mengikuti kegiatan secara langsung namun butuh
+              fasilitasnya?
             </p>
             <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
           </div>
@@ -260,58 +262,54 @@ export default async function HalamanMitra({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-biru">
-              Penyelenggara dan Kesan Peserta
+              Kesan Peserta
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-              Pelatihan ini ditangani oleh {m.nama}
+              Kata mereka yang sudah mengikuti pelatihan
             </p>
             <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
           </div>
 
-          <div className="bg-biru text-white rounded-3xl p-6 md:p-10 max-w-3xl mx-auto mb-12">
-            <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
-              <img
-                src={m.foto}
-                alt={m.nama}
-                loading="lazy"
-                className="w-28 h-28 rounded-full object-cover border-4 border-white/25 shrink-0"
-              />
-              <div>
-                <h3 className="text-2xl font-bold">{m.nama}</h3>
-                <p className="text-white/70 text-sm mt-1">{m.jabatan}</p>
-                <p className="text-white/85 text-sm mt-3 leading-relaxed">
-                  {m.penyajian}
-                </p>
-              </div>
-            </div>
-          </div>
-
           {m.testimoni.length > 0 && (
-            <>
-              <h3 className="text-xl font-bold text-biru text-center mb-6">
-                Kata Mereka yang Sudah Daftar
-              </h3>
-              <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
-                {m.testimoni.map((t) => (
-                  <figure
-                    key={t.nama}
-                    className="bg-krem rounded-2xl p-6 shadow-sm"
-                  >
-                    <i
-                      className="fas fa-quote-left text-buah/30 text-2xl"
-                      aria-hidden="true"
-                    ></i>
-                    <blockquote className="text-gray-700 mt-2 leading-relaxed">
-                      {t.teks}
-                    </blockquote>
-                    <figcaption className="text-sm font-bold text-biru mt-4">
-                      {t.nama}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </>
+            <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+              {m.testimoni.map((t) => (
+                <figure
+                  key={t.nama}
+                  className="bg-krem rounded-2xl p-6 shadow-sm flex flex-col"
+                >
+                  <i
+                    className="fas fa-quote-left text-buah/30 text-2xl"
+                    aria-hidden="true"
+                  ></i>
+                  <blockquote className="text-gray-700 mt-2 leading-relaxed flex-1">
+                    {t.teks}
+                  </blockquote>
+                  <figcaption className="text-sm font-bold text-biru mt-4">
+                    {t.nama}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           )}
+
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-10">
+            <a
+              href="#formulir"
+              className="bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
+            >
+              Daftar Sekarang
+            </a>
+            <a
+              href={`https://wa.me/${m.wa}?text=${encodeURIComponent(
+                `Halo ${m.nama}, saya ingin berdiskusi tentang ${sesi.tema}.`
+              )}`}
+              target="_blank"
+              rel="noopener"
+              className="border-2 border-buah text-buah font-bold px-8 py-3 rounded-full hover:bg-buah hover:text-white transition text-center"
+            >
+              Diskusi dengan Admin
+            </a>
+          </div>
         </div>
       </section>
 

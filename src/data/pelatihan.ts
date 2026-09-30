@@ -124,6 +124,10 @@ export const mitra: Mitra[] = [
         nama: "Bapak Andi, SMPN 3 Bandung",
         teks: "Canva yang dulu saya kebal, sekarang jadi alat favorit saya.",
       },
+      {
+        nama: "Ibu Tuti, SD Negeri 4 Semarang",
+        teks: "Penjelasannya runtut, tidak ada yang membingungkan. Sangat membantu untuk tugas sekolah.",
+      },
     ],
   },
   {
@@ -141,6 +145,14 @@ export const mitra: Mitra[] = [
         nama: "Ibu Sari, SD Negeri 2 Semarang",
         teks: "Karena kasusnya dari kelas saya sendiri, terasa sangat relevan.",
       },
+      {
+        nama: "Bapak Joko, SMP Negeri 6 Solo",
+        teks: "Contoh kasusnya nyata, bukan teori. Saya langsung paham cara memakainya.",
+      },
+      {
+        nama: "Ibu Maya, SDTK 1 Yustania, Papua",
+        teks: "Materi, panduan, dan pendampingan semuanya lengkap.",
+      },
     ],
   },
   {
@@ -157,6 +169,14 @@ export const mitra: Mitra[] = [
       {
         nama: "Bapak Hendra, SD Negeri 5 Yogyakarta",
         teks: "Sesi tanya jawabnya panjang dan tidak terburu-buru. Sangat membantu.",
+      },
+      {
+        nama: "Ibu Lina, SMPN 2 Malang",
+        teks: "Materinya singkat tapi padat, lalu banyak tanya jawab. Pas banget buat guru sibuk.",
+      },
+      {
+        nama: "Bapak Wahyu, SD Negeri 9, Yogyakarta",
+        teks: "Saya ikut karena temannya sudah sukses. Ternyata memang beda.",
       },
     ],
   },
