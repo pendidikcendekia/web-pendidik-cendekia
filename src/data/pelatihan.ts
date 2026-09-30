@@ -1,3 +1,5 @@
+export type Fasilitas = { ikon: string; judul: string; teks: string };
+
 export type SesiPelatihan = {
   id: string;
   tema: string;
@@ -8,8 +10,12 @@ export type SesiPelatihan = {
   harga: string;
   kuota: string;
   deskripsi: string;
+  tentang: string;
   materi: string[];
+  fasilitas: Fasilitas[];
+  siapa: string;
   pamflet: string;
+  fotoSertifikat: string;
 };
 
 export type Mitra = {
@@ -24,6 +30,29 @@ export type Mitra = {
   testimoni: { nama: string; teks: string }[];
 };
 
+const fasilitasStandar: Fasilitas[] = [
+  {
+    ikon: "fa-certificate",
+    judul: "E-Sertifikat Pelatihan",
+    teks: "Terbit atas nama peserta, dapat divalidasi secara online.",
+  },
+  {
+    ikon: "fa-play-circle",
+    judul: "Rekaman dan materi",
+    teks: "Kelas yang bisa diakses kapan saja setelah pelatihan selesai.",
+  },
+  {
+    ikon: "fa-comments",
+    judul: "Grup diskusi peserta",
+    teks: "Untuk bertanya dan berbagi praktik bersama mentor.",
+  },
+  {
+    ikon: "fa-headset",
+    judul: "Pendampingan WhatsApp",
+    teks: "Mendampingan langsung dari mentor untuk peserta.",
+  },
+];
+
 export const sesiPelatihan: SesiPelatihan[] = [
   {
     id: "canva-okt-2026",
@@ -36,13 +65,18 @@ export const sesiPelatihan: SesiPelatihan[] = [
     kuota: "60 peserta",
     deskripsi:
       "Kuasai Canva dari nol sampai bisa membuat materi visual, presentasi, dan konten promosi yang siap pakai.",
+    tentang:
+      "Canva adalah aplikasi desain gratis yang banyak dipakai guru untuk membuat materi ajar, infografis, dan poster kegiatan. Pelatihan ini mengantar Anda langkah demi langkah, mulai dari memilih template hingga mengekspor hasil desain untuk dicetak atau dibagikan ke media sosial.",
     materi: [
       "Navigasi dasar dan elemen desain",
       "Membuat presentasi profesional",
       "Template dan tulisan yang siap pakai",
       "Ekspor untuk cetak dan media sosial",
     ],
+    fasilitas: fasilitasStandar,
+    siapa: "Guru dan tenaga kependidikan",
     pamflet: "/assets/flyer/contoh-pamflet-1.webp",
+    fotoSertifikat: "/assets/flyer/Contoh-Sertifikat.webp",
   },
   {
     id: "gemini-okt-2026",
@@ -55,13 +89,18 @@ export const sesiPelatihan: SesiPelatihan[] = [
     kuota: "60 peserta",
     deskripsi:
       "Manfaatkan kecerdasan buatan Gemini untuk menyiapkan materi ajar, soal evaluasi, dan Dumas lebih cepat.",
+    tentang:
+      "Gemini adalah asisten AI dari Google yang bisa membantu pendidik menyiapkan materi, membuat soal evaluasi, dan mengolah hasil Dumas. Pelatihan ini membahas cara memberi perintah yang tepat, praktis yang bisa langsung diterapkan, serta etika dan batas penggunaan AI dalam kegiatan belajar-mengajar.",
     materi: [
       "Dasar prompt untuk pendidik",
       "Menyusun materi dan soal otomatis",
       "Membantu analisis Dumas",
       "Etika dan verifikasi hasil AI",
     ],
+    fasilitas: fasilitasStandar,
+    siapa: "Guru dan tenaga kependidikan",
     pamflet: "/assets/flyer/contoh-pamflet-2.webp",
+    fotoSertifikat: "/assets/flyer/Contoh-Sertifikat.webp",
   },
 ];
 
