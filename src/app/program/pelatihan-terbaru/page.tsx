@@ -547,15 +547,25 @@ export default function PelatihanTerbaruPage() {
       {/* ===== PENAWARAN MANDIRI BELAJAR ===== */}
       <section id="penawaran-mandiri-belajar" className="py-6 md:py-12 bg-krem">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-biru">
+              Akses Fasilitas Pelatihan
+            </h2>
+            <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
+              Materi dan rekaman pelatihan yang telah berlangsung, lengkap dengan
+              pendampingan mentor dan e-sertifikat.
+            </p>
+            <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
+          </div>
           <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden max-w-4xl mx-auto">
             <div className="grid md:grid-cols-5">
               <div className="md:col-span-3 p-6 md:p-10 flex flex-col justify-center">
                 <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-4 self-start">
                   BELAJAR MANDIRI
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-biru mb-3">
+                <h3 className="text-2xl md:text-3xl font-bold text-biru mb-3">
                   Tak Bisa Hadir? Belajar Mandiri Tetap Bisa
-                </h2>
+                </h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Bagi Anda yang berhalangan hadir atau ingin mengulang materi,
                   tersedia akses rekaman dan materi belajar mandiri — lengkap
