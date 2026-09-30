@@ -547,7 +547,7 @@ export default function PelatihanTerbaruPage() {
       {/* ===== PENAWARAN MANDIRI BELAJAR ===== */}
       <section id="penawaran-mandiri-belajar" className="py-6 md:py-12 bg-krem">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden">
+          <div className="bg-white rounded-3xl border border-krem shadow-sm overflow-hidden max-w-4xl mx-auto">
             <div className="grid md:grid-cols-5">
               <div className="md:col-span-3 p-6 md:p-10 flex flex-col justify-center">
                 <span className="inline-block bg-krem text-buah text-xs font-bold tracking-wider px-4 py-1.5 rounded-full mb-4 self-start">
@@ -610,12 +610,12 @@ export default function PelatihanTerbaruPage() {
                   </Link>
                 </div>
               </div>
-              <div className="order-first md:order-last md:col-span-2 bg-krem p-6 flex items-center justify-center">
+              <div className="order-first md:order-last md:col-span-2 bg-krem p-4 flex items-center justify-center">
                 <img
                   src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
                   alt="Flyer Mandiri Belajar Pendidik Cendekia"
                   loading="lazy"
-                  className="w-full max-w-[16rem] h-auto rounded-2xl shadow-xl"
+                  className="w-full h-auto rounded-2xl shadow-xl"
                 />
               </div>
             </div>
