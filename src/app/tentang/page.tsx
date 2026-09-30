@@ -149,7 +149,15 @@ export default function TentangPage() {
                 KOORDINATOR PROGRAM
               </span>
               <div className="w-32 h-32 rounded-full bg-krem border-4 border-buah/20 flex items-center justify-center mb-4 overflow-hidden">
-                <span className="text-4xl font-extrabold text-buah">MM</span>
+                <img
+                  src="/assets/foto_webp/koordinator-miftahussurur.webp"
+                  alt="Muhammad Miftahussurur, Koordinator Program Pendidik Cendekia"
+                  width={128}
+                  height={128}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-extrabold text-biru">
                 Muhammad Miftahussurur
