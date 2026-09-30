@@ -67,7 +67,7 @@ Sumber: `Catatan Revisi Web PC.pdf`
 |---|---|
 | **Beranda** | Judul hero → "Pengembangan Kompetensi Pendidik". Urutan section: Hero → Pelatihan Terbaru → Mengapa Pendidik. Tombol "Lihat Detail" → `/layanan-member`. Tombol "Lihat Semua Karya" (baru). CTA → "Daftar Pelatihan" |
 | **Tentang** | Hero 2 paragraf + tombol "Lihat Program Kami". **Kartu Koordinator Program** (Muhammad Miftahussurur) di samping blok Visi |
-| **Pelatihan Terbaru** | Hero rata tengah. "Formulir dan Detail Kegiatan", "Pendaftaran Pelatihan Terbaru", "E-Sertifikat meageropsional". Section baru: **Contoh Sertifikat Kegiatan** + **Penawaran Mandiri Belajar** |
+| **Pelatihan Terbaru** | Hero rata tengah. "Formulir dan Detail Kegiatan", "Pendaftaran Pelatihan Terbaru", "E-Sertifikat Pelatihan". Section baru: **Contoh Sertifikat Kegiatan** + **Penawaran Mandiri Belajar** |
 | **Mandiri Belajar** | Route `belajar-mandiri` → **`mandiri-belajar`** (redirect permanen 308). Hero "Belajar Mandiri, Fasilitas Lengkap", tombol "Ajukan Fasilitas". Urutan: Hero → Program → Pendaftaran → Alur → Pilihan Tema |
 
 **Anchor penting (untuk tautan dari luar halaman):**
@@ -134,14 +134,26 @@ Terpakai saat testing: **132 / 100.000 (0,13%)**
 ## 📋 5 COMMIT TERAKHIR
 
 ```
+e207e7c  Tambah judul Akses Fasilitas Pelatihan di section Penawaran Belajar Mandiri
+9b1e660  Perbaiki proporsi gambar di Penawaran Belajar Mandiri
+33d96d6  Samakan desain Contoh Sertifikat dengan PELATIHAN TERDEKAT, proporsikan Penawaran Belajar Mandiri
+c396fd8  Perbaikan lanjutan revisi: tombol hero, ikon FA Pro, layout sertifikat
 2ea2809  Revisi 4 halaman sesuai Catatan Revisi Web PC
-00b95fa  Tambah STATUS-PROJECT.md: ringkasan status setelah migrasi Cloudflare
-073750c  Optimalkan logo: WebP, favicon, dan hapus file sisa
-9ca6215  Tambah Permissions-Policy header untuk_playwright hardening browser
-a84141b  Tambah konfigurasi Cloudflare Workers via OpenNext
 ```
 
 ⚠️ **Catatan:** commit `9ca6215` dan `073750c` punya pesan yang agak aneh ("_playwright"). Isinya sudah benar dan terverifikasi live.
+
+### Riwayat Revisi 30 September 2026
+
+Semua perubahan di atas berasal dari `Catatan Revisi Web PC.pdf`, dikerjakan bertahap:
+
+| Commit | Isi | Status review user |
+|---|---|---|
+| `2ea2809` | Revisi awal 4 halaman + rename Mandiri Belajar | perlu perbaikan |
+| `c396fd8` | Tombol hero, bug ikon FA Pro, layout sertifikat | perlu perbaikan |
+| `33d96d6` | Desain Contoh Sertifikat = PELATIHAN TERDEKAT, proporsi Penawaran | perlu perbaikan |
+| `9b1e660` | Proporsi gambar Penawaran (53% → 91% terisi) | ✅ disetujui |
+| `e207e7c` | Judul "Akses Fasilitas Pelatihan" | ✅ **disetujui** |
 
 ---
 
@@ -288,12 +300,12 @@ await sharp('input.png')
 
 ---
 
-## ✅ VERIFIKASI TERAKHIR (28 Sep 2026, 17:34 UTC)
+## ✅ VERIFIKASI TERAKHIR (30 Sep 2026)
 
 Semua 13 halaman HTTP 200:
 ```
 /  /tentang  /karya  /artikel  /kontak  /layanan-member
-/program/pelatihan-terbaru  /program/belajar-mandiri
+/program/pelatihan-terbaru  /program/mandiri-belajar
 /artikel/panduan-membuat-mpi-guru-sd  /kebijakan-privasi
 /robots.txt  /sitemap.xml  /favicon.ico
 ```
