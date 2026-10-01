@@ -4,8 +4,6 @@ import { notFound } from "next/navigation";
 import { mitra, sesiPelatihan, type Mitra } from "@/data/pelatihan";
 import MitraFormulir from "@/components/MitraFormulir";
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return mitra.map((m) => ({ slug: m.slug }));
 }
