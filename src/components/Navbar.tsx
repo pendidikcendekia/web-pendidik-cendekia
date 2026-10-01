@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
+import { isHalamanMitra } from "@/lib/mitra-path";
 
 const menuItems = [
   { label: "Beranda", url: "/" },
@@ -23,7 +24,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const tanpaWa = pathname.startsWith("/mitra");
+  const tanpaWa = isHalamanMitra(pathname);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {

@@ -36,6 +36,11 @@ const nextConfig: NextConfig = {
         destination: "/artikel/panduan-membuat-mpi-guru-sd",
         permanent: true,
       },
+      {
+        source: "/mitra/:slug",
+        destination: "/:slug",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { isHalamanMitra } from "@/lib/mitra-path";
 
 const nomor = "628991945123";
 const pesan = "Halo, saya ingin klaim sertifikat";
@@ -8,7 +9,7 @@ const pesan = "Halo, saya ingin klaim sertifikat";
 export default function WhatsAppFloat() {
   const pathname = usePathname();
 
-  if (pathname.startsWith("/mitra")) return null;
+  if (isHalamanMitra(pathname)) return null;
 
   return (
     <a

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useRef } from "react";
 
 const API_URL = "/api/validasi";
@@ -406,12 +407,12 @@ export default function LayananMemberPage() {
                 Belajar sesuai ritme Anda tanpa terikat jadwal. Selesaikan materi
                 pilihan, lalu peroleh sertifikat resmi Pendidik Cendekia.
               </p>
-              <a
+              <Link
                 href="/program/mandiri-belajar"
                 className="bg-buah text-white font-bold px-6 py-3 rounded-full hover:bg-biru transition text-sm"
               >
                 <i className="fas fa-play mr-1.5"></i>Mulai Belajar Mandiri
-              </a>
+              </Link>
             </div>
 
             <div className="hero-safir relative overflow-hidden rounded-3xl shadow-2xl shadow-[#0b2d55]/30 p-8 text-center text-white flex flex-col">
@@ -425,25 +426,25 @@ export default function LayananMemberPage() {
                   dapatkan sertifikat, materi, dan rekaman kegiatan setiap
                   pelatihan.
                 </p>
-                <a
+                <Link
                   href="/program/pelatihan-terbaru"
                   className="bg-white text-[#0f3d6d] font-bold px-6 py-3 rounded-full shadow-lg shadow-[#0b2d55]/40 hover:bg-krem transition text-sm inline-block"
                 >
                   <i className="fas fa-arrow-right mr-1.5"></i>Lihat Jadwal
                   Pelatihan
-                </a>
+                </Link>
               </div>
             </div>
           </div>
 
           <p className="text-gray-500 text-sm text-center mt-8">
             Butuh bantuan memilih jalur yang tepat?
-            <a
+            <Link
               href="/kontak"
               className="text-buah font-semibold hover:underline"
             >
               Hubungi Admin
-            </a>
+            </Link>
             .
           </p>
         </div>

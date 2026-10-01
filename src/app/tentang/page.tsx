@@ -42,12 +42,12 @@ export default function TentangPage() {
             seluruh program pengembangan kompetensi pendidik.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-            <a
+            <Link
               href="/program/pelatihan-terbaru#daftar-pelatihan"
               className="bg-white text-[#f75624] font-bold px-8 py-3 rounded-full hover:bg-[#16528F] hover:text-white transition text-center"
             >
               Lihat Program Kami
-            </a>
+            </Link>
             <Link
               href="/program/mandiri-belajar"
               className="border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-[#f75624] transition text-center"

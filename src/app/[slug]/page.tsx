@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { mitra, sesiPelatihan, type Mitra } from "@/data/pelatihan";
 import MitraFormulir from "@/components/MitraFormulir";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return mitra.map((m) => ({ slug: m.slug }));
 }
@@ -29,7 +31,7 @@ export async function generateMetadata({
   return {
     title: judul,
     description: deskripsi,
-    alternates: { canonical: `/mitra/${m.slug}` },
+    alternates: { canonical: `/${m.slug}` },
     openGraph: {
       title: judul,
       description: deskripsi,
