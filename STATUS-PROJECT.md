@@ -169,17 +169,29 @@ Terpakai saat testing: **132 / 100.000 (0,13%)**
 
 ---
 
-## 📋 5 COMMIT TERAKHIR
+## 📋 7 COMMIT TERAKHIR
 
 ```
-e207e7c  Tambah judul Akses Fasilitas Pelatihan di section Penawaran Belajar Mandiri
-9b1e660  Perbaiki proporsi gambar di Penawaran Belajar Mandiri
-33d96d6  Samakan desain Contoh Sertifikat dengan PELATIHAN TERDEKAT, proporsikan Penawaran Belajar Mandiri
-c396fd8  Perbaikan lanjutan revisi: tombol hero, ikon FA Pro, layout sertifikat
-2ea2809  Revisi 4 halaman sesuai Catatan Revisi Web PC
+e225a47  Hapus dynamicParams=false yang bikin 404 di Cloudflare Worker
+87846a6  Pindahkan halaman admin dari /mitra/[slug] ke root /[slug]
+ee83291  Hapus ajakan daftar oranye + sembunyikan tombol WA di halaman mitra
+39d9d4f  Revisi halaman mitra: hero 1 baris, Mandiri Belajar, Kesan Peserta
+82360dc  Redesign halaman mitra mengikuti desain halaman pusat
+39d9d4f  (lihat catatan revisi halaman mitra di bawah)
 ```
 
-⚠️ **Catatan:** commit `9ca6215` dan `073750c` punya pesan yang agak aneh ("_playwright"). Isinya sudah benar dan terverifikasi live.
+### Riwayat Halaman Admin per Admin (1–2 Oktober 2026)
+
+| Commit | Isi |
+|---|---|
+| `9995cc3` | Prototipe awal 3 halaman admin di `/mitra/[slug]` |
+| `82360dc` | Redesign mengikuti `/program/pelatihan-terbaru`: hero, Pelatihan Terdekat, Formulir & Detail, Contoh Sertifikat, Mandiri Belajar, Kesan Peserta |
+| `39d9d4f` | Hero judul 1 baris (48→36px + `md:whitespace-nowrap`), section "Akses Fasilitas Pelatihan" → "Mandiri Belajar", kartu organizer dihapus, 3 testimoni, tombol Daftar Sekarang + Diskusi dengan Admin |
+| `ee83291` | Hapus section "Kuota 60 peserta / Jangan sampai kehabisan tempat"; sembunyikan navbar "Hubungi WA" + tombol WA mengambang di halaman admin |
+| `87846a6` | Pindah `/mitra/[slug]` → `/[slug]` (URL bersih tanpa prefix), redirect 308 `/mitra/:slug` → `/:slug`, `src/lib/mitra-path.ts`, perbaikan lint `<a>` → `<Link>` |
+| `e225a47` | Bug Cloudflare 404 (`NoFallbackError`) akibat `dynamicParams = false` — dihapus setelah diuji dengan `wrangler dev` |
+
+⚠️ **Catatan penting Cloudflare:** `dynamicParams = false` pada route root `[slug]` membuat Worker mengembalikan 404 untuk semua halaman admin, sementara Vercel normal. Jangan dikembalikan tanpa diuji dulu di `npx wrangler dev`.
 
 ### Riwayat Revisi 30 September 2026
 
@@ -253,11 +265,23 @@ Sumber revisi: `Catatan Revisi Web PC.pdf`
 | Layanan Member | ⬜ Belum |
 | Kontak | ⬜ Belum |
 
-### 6. 🟡 Halaman Admin (Internal)
-- Satu kesatuan (bukan multi-page terpisah)
-- **Tidak tampil di nav publik**
-- Fungsi: kelola postingan
-- Rancangan ada di: `AGENTS-FASE5-POSTINGAN-ADMIN.md`
+### 6. 🟢 Halaman Admin per Admin — SELESAI (1 Oktober 2026)
+
+Berbeda dari rencana awal (satu halaman internal), sekarang tiap admin punya **landing page publik sendiri** seperti wordpress:
+
+| Admin | URL | Nomor WA |
+|---|---|---|
+| Miftahussurur | `/pelatihan-canva` | 628991945123 |
+| Budi Santoso | `/pelatihan-canva-budi` | 628991945124 |
+| Siti Rahmah | `/pelatihan-canva-siti` | 628991945125 |
+
+- ✅ Tidak tampil di nav publik, tapi masuk `sitemap.xml`
+- ✅ URL bersih tanpa prefix, bisa diganti bebas
+- ✅ Ganti nama path = ubah 1 baris `slug` di `src/data/pelatihan.ts`
+- ✅ Title, description, og:image, GA4 event label otomatis per admin
+- ✅ Navbar "Hubungi WA" + tombol WA mengambang disembunyikan di halaman admin (pakai `isHalamanMitra()`)
+- ⬜ Data asli (foto, jadwal, harga, testimoni) masih placeholder
+- ⬜ Tombol Daftar Sekarang / Diskusi dengan Admin belum kirim event GA4
 
 ### 7. 🟢 Cold Start (Opsional)
 - Cold start pertama API: **27,8 detik** (bundle 23 MB, 16 MB library Next.js)
@@ -306,22 +330,42 @@ await sharp('input.png')
 │       ├── logo-pc.webp        ← 38 KB (compression)
 │       └── logo-pc-footer.webp ← 25 KB
 ├── src/app/
-│   ├── layout.tsx              ← metadata global (PERLU diupdate domain)
+│   ├── layout.tsx              ← metadata global + GA4 (PERLU diupdate domain)
 │   ├── page.tsx                ← beranda
+│   ├── [slug]/page.tsx         ← HALAMAN ADMIN per admin (root, 1 Oktober 2026)
 │   ├── tentang/ karya/ artikel/ kontak/
 │   ├── layanan-member/
 │   ├── program/
 │   │   ├── pelatihan-terbaru/
 │   │   └── mandiri-belajar/       ← RENAME 30 Sep (dari belajar-mandiri)
 │   ├── kebijakan-privasi/
-│   ├── api/validasi/route.ts   ← satu-satunya dynamic route
+│   ├── api/validasi/route.ts   ← API validasi sertifikat
 │   ├── sitemap.ts              ← PERLU diupdate domain
 │   └── robots.ts
-└── src/components/
-    ├── Navbar.tsx              ← sudah pakai WebP
-    ├── Footer.tsx              ← sudah pakai WebP
-    └── WhatsAppFloat.tsx
+├── src/components/
+│   ├── Navbar.tsx              ← sembunyikan "Hubungi WA" di halaman admin
+│   ├── Footer.tsx              ← sudah pakai WebP
+│   ├── MitraFormulir.tsx       ← form → WhatsApp admin + event GA4
+│   └── WhatsAppFloat.tsx      ← disembunyikan di halaman admin
+├── src/data/pelatihan.ts      ← ⭐ DATA UTAMA: sesi pelatihan + 3 admin
+├── src/lib/mitra-path.ts       ← isHalamanMitra(pathname)
+└── STATUS-PROJECT.md           ← dokumen ini
 ```
+
+### Cara Kerja Data Halaman Admin
+
+Semua isi halaman admin diambil dari `src/data/pelatihan.ts`:
+
+```ts
+sesiPelatihan  →  dip dipakai BERSAMA semua admin (tema, tanggal, harga, materi)
+mitra          →  data KHAS per admin (slug, nama, WA, foto,deskripsi, testimoni)
+```
+
+Ganti topik pelatihan untuk semua admin = ubah `sesiId` di blok admin.
+Ganti nama URL admin = ubah `slug`.
+Tambah admin baru = tambah 1 objek di array `mitra`.
+
+Halaman otomatis dapat: URL, title SEO, meta description, og:image, sitemap, event GA4.
 
 ---
 
@@ -338,26 +382,41 @@ await sharp('input.png')
 
 ---
 
-## ✅ VERIFIKASI TERAKHIR (30 Sep 2026)
+## ✅ VERIFIKASI TERAKHIR (2 Oktober 2026)
 
-Semua 13 halaman HTTP 200:
-```
-/  /tentang  /karya  /artikel  /kontak  /layanan-member
-/program/pelatihan-terbaru  /program/mandiri-belajar
-/artikel/panduan-membuat-mpi-guru-sd  /kebijakan-privasi
-/robots.txt  /sitemap.xml  /favicon.ico
-```
+### Build
+- `npm run build` → 18/18 halaman statis, 0 error
+- `npx eslint src` → 0 error, 31 warning (semanya `<img>` vs `next/image`)
 
-API validasi: `{"ok":true,"data":[]}` (Google Sheets terbaca normal)
+### Halaman Admin (path baru)
+| URL | Vercel | Cloudflare |
+|---|---|---|
+| `/pelatihan-canva` | 200 | 200 |
+| `/pelatihan-canva-budi` | 200 | 200 |
+| `/pelatihan-canva-siti` | 200 | 200 |
+| `/mitra/*` (lama) | 308 → path baru | 308 → path baru |
+| slug asing | 404 | 404 |
 
-Security headers aktif:
-```
-x-content-type-options: nosniff
-x-frame-options: DENY
-referrer-policy: strict-origin-when-cross-origin
-permissions-policy: geolocation=(), microphone=(), camera=()
-```
+### Halaman Utama
+10 halaman: `/`, `/tentang`, `/karya`, `/artikel`, `/kontak`, `/layanan-member`, `/program/pelatihan-terbaru`, `/program/mandiri-belajar`, `/artikel/panduan-membuat-mpi-guru-sd`, `/kebijakan-privasi` → semua 200 di kedua platform.
+
+### Per Admin
+- Nomor WA berbeda: 628991945123 / 628991945124 / 628991945125
+- Navbar "Hubungi WA" disembunyikan ✅
+- Tombol WA mengambang disembunyikan ✅
+- 5 section lengkap, 3 testimoni, 2 tombol CTA
+
+### SEO / Iklan
+- GA4 `G-BQV1L2C594` termuat di semua halaman
+- Title, description, canonical, og:* unik per admin
+- Tidak ada `noindex`, `robots.txt` Allow: /
+- Event GA4: `kirim_formulir` (dengan `event_label` = slug admin)
+
+### ⬜ Yang belum untuk iklan
+- Event klik tombol "Daftar Sekarang" & "Diskusi dengan Admin"
+- Pemisahan GA4 per admin (sekarang semua ke 1 akun)
+- Pixel Meta / Google Ads tag untuk remarketing
 
 ---
 
-*Waktu baca: 3-5 menit untuk memahami seluruh status project.*
+*Terakhir diperbarui: 2 Oktober 2026*
