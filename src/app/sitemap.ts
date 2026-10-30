@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { mitra } from "@/data/pelatihan";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://pendidikcendekia.id",
+  const base = "https://pendidikcendekia.id";
   return [
     ...mitra.map((m) => ({
       url: `${base}/${m.slug}`,
