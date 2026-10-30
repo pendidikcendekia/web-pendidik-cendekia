@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Kebijakan Privasi PT Cipta Arah Cendekia - Pendidik Cendekia. Bagaimana kami mengumpulkan, menggunakan, dan melindungi data Anda.",
   alternates: {
-    canonical: "https://pendidikcendekia.vercel.app/kebijakan-privasi",
+    canonical: "https://pendidikcendekia.id/kebijakan-privasi",
   },
 };
 
@@ -35,7 +35,7 @@ export default function KebijakanPrivasiPage() {
           <span className="font-semibold text-biru">
             Pendidik Cendekia
           </span>{" "}
-          (pendidikcendekia.vercel.app).
+          (pendidikcendekia.id).
         </p>
 
         <h2 className="text-2xl font-bold text-biru mt-10 mb-4">

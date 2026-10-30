@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "Platform pengembangan kompetensi guru Indonesia. Webinar, workshop, dan mentoring bersertifikat untuk pendidik profesional.",
-  metadataBase: new URL("https://pendidikcendekia.vercel.app"),
+  metadataBase: new URL("https://pendidikcendekia.id"),
   openGraph: {
     type: "website",
     siteName: "Pendidik Cendekia",

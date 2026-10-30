@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Pendidik Cendekia - Beranda",
     description:
       "Platform pengembangan kompetensi guru Indonesia. Webinar, workshop, dan mentoring bersertifikat.",
-    url: "https://pendidikcendekia.vercel.app/",
+    url: "https://pendidikcendekia.id/",
   },
 };
 

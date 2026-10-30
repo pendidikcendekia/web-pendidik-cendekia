@@ -8,12 +8,12 @@ export const metadata = {
     title: "Pendidik Cendekia - Tentang Kami",
     description:
       "Visi, misi, dan tim Pendidik Cendekia dalam mengembangkan kompetensi pendidik Indonesia.",
-    url: "https://pendidikcendekia.vercel.app/tentang",
+    url: "https://pendidikcendekia.id/tentang",
     type: "website",
     images: ["/assets/logo/logo-pc.webp"],
   },
   alternates: {
-    canonical: "https://pendidikcendekia.vercel.app/tentang",
+    canonical: "https://pendidikcendekia.id/tentang",
   },
 };
 

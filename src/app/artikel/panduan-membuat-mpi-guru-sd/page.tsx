@@ -9,13 +9,13 @@ export const metadata = {
     title: "Pendidik Cendekia - Panduan Membuat MPI untuk Guru SD",
     description:
       "Panduan lengkap membuat Multimedia Pembelajaran Interaktif untuk guru SD.",
-    url: "https://pendidikcendekia.vercel.app/artikel/panduan-membuat-mpi-guru-sd",
+    url: "https://pendidikcendekia.id/artikel/panduan-membuat-mpi-guru-sd",
     type: "article",
     images: ["/assets/logo/logo-pc.webp"],
   },
   alternates: {
     canonical:
-      "https://pendidikcendekia.vercel.app/artikel/panduan-membuat-mpi-guru-sd",
+      "https://pendidikcendekia.id/artikel/panduan-membuat-mpi-guru-sd",
   },
 };
 

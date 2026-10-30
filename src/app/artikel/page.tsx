@@ -9,12 +9,12 @@ export const metadata = {
     title: "Pendidik Cendekia - Artikel",
     description:
       "Artikel dan panduan praktis untuk guru. Tips mengajar dan teknologi pendidik.",
-    url: "https://pendidikcendekia.vercel.app/artikel",
+    url: "https://pendidikcendekia.id/artikel",
     type: "website",
     images: ["/assets/logo/logo-pc.webp"],
   },
   alternates: {
-    canonical: "https://pendidikcendekia.vercel.app/artikel",
+    canonical: "https://pendidikcendekia.id/artikel",
   },
 };
 

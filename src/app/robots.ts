@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://pendidikcendekia.vercel.app/sitemap.xml",
+    sitemap: "https://pendidikcendekia.id/sitemap.xml",
   };
 }
