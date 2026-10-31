@@ -29,7 +29,7 @@ export async function generateMetadata({
   return {
     title: judul,
     description: deskripsi,
-    alternates: { canonical: `/${m.slug}` },
+    alternates: { canonical: `https://pendidikcendekia.id/${m.slug}` },
     openGraph: {
       title: judul,
       description: deskripsi,
