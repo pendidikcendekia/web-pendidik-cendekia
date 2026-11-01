@@ -50,7 +50,7 @@ export default function Beranda() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/flyer/contoh-pamflet-2.webp"
+                src="/assets/flyer/pamflet-111126.webp"
                 alt="Flyer Pendidik Cendekia"
                 className="w-full max-w-xs h-auto rounded-2xl shadow-2xl"
               />
@@ -79,8 +79,8 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-2.webp"
-                  alt="Flyer Webinar Optimalisasi KKA"
+                  src="/assets/flyer/pamflet-111126.webp"
+                  alt="Flyer Webinar Batch 1"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
@@ -90,19 +90,19 @@ export default function Beranda() {
                     WEBINAR
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    4 JP
+                    32 JP
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Optimalisasi KKA untuk Pembelajaran Koding dan AI
+                  Eksplorasi dan Pemanfaatan Canva AI
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
-                  📅 30 Agustus 2026 | 🕐 19:30 WIB
+                  📅 11 November 2026 | 🕐 19:00 WIB
                 </p>
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
                   <a
-                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Webinar%20Optimalisasi%20KKA"
+                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Webinar%20Canva%20Ai"
                     target="_blank"
                     className="bg-buah text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-biru transition"
                   >
@@ -115,30 +115,30 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-3.webp"
-                  alt="Flyer Workshop Deep Learning"
+                  src="/assets/flyer/pamflet-251126.webp"
+                  alt="Flyer Webinar Batch 2"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex flex-wrap items-center gap-2 mb-3">
                   <span className="inline-block bg-buah text-white text-xs font-bold tracking-wider px-3 py-1 rounded-full">
-                    WORKSHOP
+                    WEBINAR
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    12 JP
+                    32 JP
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Strategi Pembelajaran Mendalam Berbasis Deep Learning
+                  Pemanfaatan AI Gemini untuk Efisiensi Kerja Guru dan Tendik
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
-                  📅 6 September 2026 | 🕐 09:00-12:00 WIB
+                  📅 25 November 2026 | 🕐 19:00 WIB
                 </p>
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
                   <a
-                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Workshop%20Deep%20Learning"
+                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ai%20Gemini"
                     target="_blank"
                     className="bg-buah text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-biru transition"
                   >
@@ -151,8 +151,8 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-1.webp"
-                  alt="Flyer Optimalisasi Ruang Murid"
+                  src="/assets/flyer/pamflet-091226.webp"
+                  alt="Flyer Webinar Batch 3"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
@@ -162,11 +162,11 @@ export default function Beranda() {
                     WEBINAR
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    Sep 2026
+                    32 JP
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Optimalisasi Ruang Murid dalam Pembelajaran Digital
+                  Pemanfaatan Sumber Belajar Ruang Murid dalam Mendukung Pembelajaran Mendalam Berbantuan PID
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
                   📅 Sabtu, 5 September 2026 | 🕐 09.00-11.30 WIB
@@ -174,7 +174,7 @@ export default function Beranda() {
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
                   <a
-                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Pelatihan%20Optimalisasi%20Ruang%20Murid%20dalam%20Pembelajaran%20Digital"
+                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ruang%20Murid%20dalam%20Pembelajaran%20Digital"
                     target="_blank"
                     className="bg-buah text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-biru transition"
                   >
