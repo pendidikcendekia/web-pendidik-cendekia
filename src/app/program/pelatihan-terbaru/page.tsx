@@ -90,7 +90,7 @@ export default function PelatihanTerbaruPage() {
           <div className="grid md:grid-cols-2">
             <div className="bg-krem p-3 flex items-center justify-center">
               <img
-                src="/assets/flyer/contoh-pamflet-1.webp"
+                src="/assets/flyer/pamflet-111126.webp"
                 alt="Flyer Pelatihan Terdekat"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
@@ -100,20 +100,18 @@ export default function PelatihanTerbaruPage() {
                 PELATIHAN TERDEKAT
               </span>
               <h2 className="text-2xl md:text-3xl font-bold text-biru mb-3">
-                Optimalisasi Ruang Murid dalam Pembelajaran Digital
+                Eksplorasi dan Pemanfaatan Canva AI dalam Pengembangan Media Pembelajaran
               </h2>
               <p className="text-gray-600 mb-6">
-                Pelatihan praktis minggu ini untuk mengenal dan menguasai Ruang
-                Murid, mulai dari membuat materi interaktif hingga memantau
-                perkembangan murid.
+                Pelatihan praktis yang mengenalkan berbagai fitur Canva AI, dilanjutkan dengan eksplorasi dan praktik pemanfaatannya untuk mendukung pengembangan media dan aktivitas pembelajaran melalui LKP.
               </p>
               <ul className="space-y-2 mb-6 text-biru">
                 <li>
-                  <i className="fas fa-calendar-day text-buah w-6"></i> Sabtu, 5
-                  September 2026
+                  <i className="fas fa-calendar-day text-buah w-6"></i> Rabu, 11
+                  November 2026
                 </li>
                 <li>
-                  <i className="fas fa-clock text-buah w-6"></i> 09.00 - 11.30
+                  <i className="fas fa-clock text-buah w-6"></i> 19.00 - 21.00
                   WIB
                 </li>
                 <li>
@@ -264,12 +262,7 @@ export default function PelatihanTerbaruPage() {
                   className={`${openAccordion === 0 ? "" : "hidden"} px-5 py-4 text-gray-600 leading-relaxed`}
                 >
                   <p>
-                    Ruang Murid adalah salah satu fitur andalan Merdeka Mengajar
-                    untuk mendukung pembelajaran daring yang aktif dan
-                    menyenangkan. Pelatihan ini mengantar Anda langkah demi
-                    langkah memakai Ruang Murid dalam kegiatan belajar-mengajar
-                    setiap hari, sekaligus menyelaraskannya dengan implementasi
-                    IFP di satuan pendidikan Anda.
+                    Pelatihan ini membekali peserta dengan keterampilan praktis dalam mengeksplorasi dan memanfaatkan berbagai fitur Canva AI untuk mengembangkan media pembelajaran yang kreatif dan interaktif, serta mendukung perancangan aktivitas pembelajaran melalui LKP.
                   </p>
                 </div>
               </div>
@@ -293,27 +286,19 @@ export default function PelatihanTerbaruPage() {
                   <ul className="space-y-2">
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Mengenal fitur-fitur utama Ruang Murid
+                      Pengenalan Canva AI dan fitur-fiturnya
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Membuat dan membagikan materi interaktif
+                      Eksplorasi fitur Canva AI
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Memanfaatkan tugas, kuis, dan forum diskusi
+                      Pemanfaatan Canva AI dalam pembelajaran
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Mengelola aktivitas dan memantau perkembangan murid
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Strategi integrasi Ruang Murid dengan implementasi IFP
-                    </li>
-                    <li>
-                      <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Praktik langsung dan studi kasus nyata
+                      Praktik membuat karya dengan Canva AI
                     </li>
                   </ul>
                 </div>
@@ -341,7 +326,7 @@ export default function PelatihanTerbaruPage() {
                       </span>
                       <span className="text-gray-700">
                         <strong className="text-biru">E-Sertifikat Pelatihan</strong>{" "}
-                        terbit atas nama peserta, dapat divalidasi secara online.
+                        Berlaku untuk SKP dll.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -349,8 +334,8 @@ export default function PelatihanTerbaruPage() {
                         <i className="fas fa-play-circle"></i>
                       </span>
                       <span className="text-gray-700">
-                        <strong className="text-biru">Rekaman &amp; materi</strong>{" "}
-                        kelas yang bisa diakses kapan saja setelah pelatihan.
+                        <strong className="text-biru">Modul &amp; Pelatihan</strong>{" "}
+                        Materi pelatihan yang dapat dipelajari kapanpun.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -358,8 +343,8 @@ export default function PelatihanTerbaruPage() {
                         <i className="fas fa-comments"></i>
                       </span>
                       <span className="text-gray-700">
-                        <strong className="text-biru">Grup diskusi peserta</strong>{" "}
-                        untuk bertanya dan berbagi praktik bersama mentor.
+                        <strong className="text-biru">Bimbingan Intensif</strong>{" "}
+                        Sarana untuk berbagi praktik bersama mentor.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -367,8 +352,8 @@ export default function PelatihanTerbaruPage() {
                         <i className="fas fa-headset"></i>
                       </span>
                       <span className="text-gray-700">
-                        <strong className="text-biru">Pendampingan WhatsApp</strong>{" "}
-                        langsung dari mentor untuk peserta.
+                        <strong className="text-biru">Dokumen Penundukung</strong>{" "}
+                        Daftar Hadir, Surat Undangan, Laporan Pengembangan
                       </span>
                     </li>
                   </ul>
@@ -436,7 +421,7 @@ export default function PelatihanTerbaruPage() {
             </div>
             <div className="order-first md:order-last bg-krem p-3 flex items-center justify-center">
               <img
-                src="/assets/flyer/Contoh-Sertifikat.webp"
+                src="/assets/flyer/contoh-sertifikat-1.webp"
                 alt="Contoh Sertifikat Kegiatan Pendidik Cendekia"
                 loading="lazy"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
@@ -463,26 +448,26 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/contoh-pamflet-2.webp"
-                    alt="Flyer Workshop Karya Ilmiah"
+                    src="/assets/flyer/thumbnail-251126.webp"
+                    alt="Flyer Webinar Batch 2"
                     className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
                   <span className="inline-block bg-buah text-white text-xs font-bold tracking-wider px-3 py-1 rounded-full mb-3">
-                    WORKSHOP
+                    WEBINAR
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-biru mb-3">
-                    Kelas Menulis Karya Ilmiah Guru
+                    Eksplorasi dan Pemanfaatan Canva AI
                   </h3>
                   <ul className="space-y-2 mb-6 text-biru">
                     <li>
                       <i className="fas fa-calendar-day text-buah w-6"></i>{" "}
-                      Sabtu, 12 September 2026
+                      Rabu, 25 November 2026
                     </li>
                     <li>
-                      <i className="fas fa-clock text-buah w-6"></i> 09.00 -
-                      12.00 WIB
+                      <i className="fas fa-clock text-buah w-6"></i> 19.00 -
+                      21.00 WIB
                     </li>
                     <li>
                       <i className="fas fa-video text-buah w-6"></i> Via Zoom
@@ -490,7 +475,7 @@ export default function PelatihanTerbaruPage() {
                     </li>
                   </ul>
                   <a
-                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Workshop%20Kelas%20Menulis%20Karya%20Ilmiah%20Guru."
+                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Canva%20Ai."
                     target="_blank"
                     className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                   >
@@ -504,26 +489,26 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/contoh-pamflet-3.webp"
-                    alt="Flyer Seminar Media AI"
+                    src="/assets/flyer/thumbnail-091226.webp"
+                    alt="Flyer Webinar Batch 3"
                     className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
                   <span className="inline-block bg-buah text-white text-xs font-bold tracking-wider px-3 py-1 rounded-full mb-3">
-                    SEMINAR
+                    WEBINAR
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-biru mb-3">
-                    Seminar Media Pembelajaran Interaktif berbasis AI
+                    Pemanfaatan Sumber Belajar Ruang Murid serta PID
                   </h3>
                   <ul className="space-y-2 mb-6 text-biru">
                     <li>
                       <i className="fas fa-calendar-day text-buah w-6"></i>{" "}
-                      Sabtu, 19 September 2026
+                      Rabu, 09 Desember 2026
                     </li>
                     <li>
-                      <i className="fas fa-clock text-buah w-6"></i> 09.00 -
-                      11.00 WIB
+                      <i className="fas fa-clock text-buah w-6"></i> 19.00 -
+                      21.00 WIB
                     </li>
                     <li>
                       <i className="fas fa-video text-buah w-6"></i> Via Zoom
@@ -531,7 +516,7 @@ export default function PelatihanTerbaruPage() {
                     </li>
                   </ul>
                   <a
-                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Seminar%20Media%20Pembelajaran%20Interaktif%20berbasis%20AI."
+                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ruang%20Murid%20dan%20PID."
                     target="_blank"
                     className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                   >
@@ -593,7 +578,7 @@ export default function PelatihanTerbaruPage() {
                       <i className="fas fa-chalkboard-user"></i>
                     </span>
                     <span className="text-gray-700 text-sm">
-                      Pendampingan mentor
+                      Materi dan Rekaman
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -601,7 +586,7 @@ export default function PelatihanTerbaruPage() {
                       <i className="fas fa-users"></i>
                     </span>
                     <span className="text-gray-700 text-sm">
-                      Grup diskusi peserta
+                      Grup Mentoring
                     </span>
                   </div>
                 </div>

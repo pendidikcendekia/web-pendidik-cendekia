@@ -94,10 +94,10 @@ export default function Beranda() {
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Eksplorasi dan Pemanfaatan Canva AI
+                  Eksplorasi dan Pemanfaatan Canva AI dalam Pengembangan Media Pembelajaran
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
-                  📅 11 November 2026 | 🕐 19:00 WIB
+                  📅 Rabu, 11 November 2026 | 🕐 19.00 WIB
                 </p>
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
@@ -133,7 +133,7 @@ export default function Beranda() {
                   Pemanfaatan AI Gemini untuk Efisiensi Kerja Guru dan Tendik
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
-                  📅 25 November 2026 | 🕐 19:00 WIB
+                  📅 Rabu, 25 November 2026 | 🕐 19.00 WIB
                 </p>
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
@@ -151,7 +151,7 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/pamflet-091226.webp"
+                  src="/assets/flyer/draft-pamflet-091226.webp"
                   alt="Flyer Webinar Batch 3"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -169,7 +169,7 @@ export default function Beranda() {
                   Pemanfaatan Sumber Belajar Ruang Murid dalam Mendukung Pembelajaran Mendalam Berbantuan PID
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
-                  📅 Sabtu, 5 September 2026 | 🕐 09.00-11.30 WIB
+                  📅 Rabu, 09 Desember 2026 | 🕐 19.00 WIB
                 </p>
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
