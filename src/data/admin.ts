@@ -11,6 +11,7 @@ export interface Admin {
 
 export const ADMIN_LIST: Admin[] = [
   { nama: "Bima", wa: "628991945123", telp: "+62 895-1945-123" },
-  { nama: "Ayu", wa: "6281276543210", telp: "+62 812-7654-3210" },
-  { nama: "Citra", wa: "6281398765432", telp: "+62 813-9876-5432" },
+  { nama: "Laras", wa: "6281327617731", telp: "+62 813-2761-7731" },
+  { nama: "Galih", wa: "6289691410497", telp: "+62 896-9141-0497" },
+  { nama: "Yahra", wa: "6285849517571", telp: "+62 858-4951-7571" },
 ];

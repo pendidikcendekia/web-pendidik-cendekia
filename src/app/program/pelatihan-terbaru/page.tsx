@@ -21,7 +21,7 @@ export default function PelatihanTerbaruPage() {
     }
 
     const msg = encodeURIComponent(
-      "Halo Admin Pendidik Cendekia, saya daftar Pelatihan Optimalisasi Ruang Murid dalam Pembelajaran Digital.\n" +
+      "Halo Admin Pendidik Cendekia, saya daftar Pelatihan Terbaru Pendidik Cendekia.\n" +
         "Nama: " +
         name +
         "\n" +
@@ -170,7 +170,7 @@ export default function PelatihanTerbaruPage() {
                 </h3>
                 <p className="text-white/80 text-sm mt-1">
                   Isi data di bawah, klik Kirim. Data otomatis terkirim ke
-                  WhatsApp admin untuk konfirmasi pembayaran.
+                  WhatsApp admin untuk konfirmasi Pendaftaran.
                 </p>
               </div>
               {formSubmitted ? (

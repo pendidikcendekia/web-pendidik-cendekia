@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { isHalamanMitra } from "@/lib/mitra-path";
 
 const nomor = "628991945123";
-const pesan = "Halo, saya ingin klaim sertifikat";
+const pesan = "Halo, saya ingin mendapatkan sertifikat pelatihan kompetensi pendidikan dari Pendidik Cendekia";
 
 export default function WhatsAppFloat() {
   const pathname = usePathname();

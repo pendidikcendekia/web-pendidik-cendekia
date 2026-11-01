@@ -92,7 +92,7 @@ export default function KontakPage() {
               <i className="fas fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-gray-400"></i>
               <input
                 type="text"
-                placeholder="Cari nama rekan (Bima, Ayu, Citra)…"
+                placeholder="Cari nama rekan (Bima, Laras, Galih)…"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 aria-label="Cari nama rekan admin"
