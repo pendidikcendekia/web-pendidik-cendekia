@@ -232,7 +232,7 @@ export default function MandiriBelajarPage() {
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/flyer/contoh-Sertifikat-1.webp"
+                  src="/assets/flyer/contoh-sertifikat-1.webp"
                   alt="Contoh Sertifikat"
                   className="w-full h-auto"
                 />
