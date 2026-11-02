@@ -58,7 +58,7 @@ export default function MandiriBelajarPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center">
               <img
-                src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
+                src="/assets/flyer/pamflet-mandiri-belajar.webp"
                 alt="Flyer Mandiri Belajar"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
@@ -72,7 +72,7 @@ export default function MandiriBelajarPage() {
               </h1>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Belajar melalui rekaman dan materi kapan saja, sekaligus
-                mendapatkan Sertifikat dan pendampingan dalam grup diskusi.
+                mendapatkan Sertifikat dan diskusi bersama mentor dalam grup WhatsApp.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -89,7 +89,7 @@ export default function MandiriBelajarPage() {
                     <i className="fas fa-chalkboard-user text-xl text-buah"></i>
                   </div>
                   <p className="font-bold text-biru text-xs">
-                    Bimbingan Intensif
+                    Diskusi dengan Mentor
                   </p>
                 </div>
                 <div className="bg-krem rounded-2xl p-4 text-center">
@@ -334,8 +334,8 @@ export default function MandiriBelajarPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-1.webp"
-                  alt="Flyer Topik Ruang Murid"
+                  src="/assets/flyer/pamflet-111126.webp"
+                  alt="Flyer Webinar Batch 1"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
@@ -345,14 +345,14 @@ export default function MandiriBelajarPage() {
                     Akses Materi Pelatihan
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    Sep 2026
+                    11 Nov 2026
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Optimalisasi Ruang Murid dalam Pembelajaran Digital
+                  Eksplorasi dan Pemanfaatan Canva AI
                 </h3>
                 <a
-                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%3A%20Optimalisasi%20Ruang%20Murid%20dalam%20Pembelajaran%20Digital."
+                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%20Canva%20Ai"
                   target="_blank"
                   className="mt-auto bg-buah text-white font-bold py-3 rounded-full text-center hover:bg-biru transition"
                 >
@@ -364,8 +364,8 @@ export default function MandiriBelajarPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-2.webp"
-                  alt="Flyer Topik Karya Ilmiah"
+                  src="/assets/flyer/pamflet-251126.webp"
+                  alt="Flyer Webinar Batch 2"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
@@ -375,14 +375,14 @@ export default function MandiriBelajarPage() {
                     Akses Materi Pelatihan
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    Sep 2026
+                    25 Nov 2026
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Kelas Menulis Karya Ilmiah Guru
+                  Pemanfaatan AI Gemini untuk Efisiensi Kerja Guru dan Tendik
                 </h3>
                 <a
-                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%3A%20Kelas%20Menulis%20Karya%20Ilmiah%20Guru."
+                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%20Pemanfaatan%20Ai%20Gemini"
                   target="_blank"
                   className="mt-auto bg-buah text-white font-bold py-3 rounded-full text-center hover:bg-biru transition"
                 >
@@ -394,8 +394,8 @@ export default function MandiriBelajarPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/contoh-pamflet-3.webp"
-                  alt="Flyer Topik Media AI"
+                  src="/assets/flyer/pamflet-091226.webp"
+                  alt="Flyer Webinar Batch 3"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
               </div>
@@ -405,14 +405,14 @@ export default function MandiriBelajarPage() {
                     Akses Materi Pelatihan
                   </span>
                   <span className="inline-block border-2 border-buah text-buah text-xs font-bold px-3 py-0.5 rounded-full">
-                    Sep 2026
+                    09 Des 2026
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Seminar Media Pembelajaran Interaktif berbasis AI
+                  Pemanfaatan Sumber Belajar Ruang Murid
                 </h3>
                 <a
-                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%3A%20Media%20Pembelajaran%20Interaktif%20berbasis%20AI."
+                  href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20belajar%20mandiri%20topik%20Pemanfaatan%20Ruang%20Murid%20dan%20PID."
                   target="_blank"
                   className="mt-auto bg-buah text-white font-bold py-3 rounded-full text-center hover:bg-biru transition"
                 >

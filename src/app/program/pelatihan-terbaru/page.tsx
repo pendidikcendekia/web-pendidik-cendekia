@@ -448,17 +448,17 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/thumbnail-251126.webp"
-                    alt="Flyer Webinar Batch 2"
-                    className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
+                  src="/assets/flyer/thumbnail-251126.webp"
+                  alt="Flyer Webinar Batch 2"
+                  className="w-full aspect-video object-contain rounded-xl shadow-2xl"
                   />
-                </div>
+                  </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
                   <span className="inline-block bg-buah text-white text-xs font-bold tracking-wider px-3 py-1 rounded-full mb-3">
                     WEBINAR
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-biru mb-3">
-                    Eksplorasi dan Pemanfaatan Canva AI
+                    Pemanfaatan AI Gemini untuk Efisiensi Kerja Guru dan Tendik
                   </h3>
                   <ul className="space-y-2 mb-6 text-biru">
                     <li>
@@ -475,7 +475,7 @@ export default function PelatihanTerbaruPage() {
                     </li>
                   </ul>
                   <a
-                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Canva%20Ai."
+                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ai%20Gemini"
                     target="_blank"
                     className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                   >
@@ -607,7 +607,7 @@ export default function PelatihanTerbaruPage() {
               </div>
               <div className="order-first md:order-last md:col-span-2 bg-krem p-4 flex items-center justify-center">
                 <img
-                  src="/assets/flyer/Flyer-Belajar-Mandiri.webp"
+                  src="/assets/flyer/pamflet-mandiri-belajar.webp"
                   alt="Flyer Mandiri Belajar Pendidik Cendekia"
                   loading="lazy"
                   className="w-full h-auto rounded-2xl shadow-xl"
