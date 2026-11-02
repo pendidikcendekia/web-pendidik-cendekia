@@ -86,14 +86,6 @@ export default function MandiriBelajarPage() {
                 </div>
                 <div className="bg-krem rounded-2xl p-4 text-center">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm">
-                    <i className="fas fa-chalkboard-user text-xl text-buah"></i>
-                  </div>
-                  <p className="font-bold text-biru text-xs">
-                    Diskusi dengan Mentor
-                  </p>
-                </div>
-                <div className="bg-krem rounded-2xl p-4 text-center">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm">
                     <i className="fas fa-users text-xl text-buah"></i>
                   </div>
                   <p className="font-bold text-biru text-xs">Grup Diskusi</p>
@@ -106,6 +98,14 @@ export default function MandiriBelajarPage() {
                     Resmi
                   </span>
                   <p className="font-bold text-biru text-xs">Sertifikat</p>
+                </div>
+                <div className="bg-krem rounded-2xl p-4 text-center">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-2 shadow-sm">
+                    <i className="fas fa-chalkboard-user text-xl text-buah"></i>
+                  </div>
+                  <p className="font-bold text-biru text-xs">
+                    Dokumen Pendukung
+                  </p>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ export default function MandiriBelajarPage() {
               Pengajuan Fasilitas Mandiri Belajar
             </h2>
             <p className="text-gray-600 mt-3 max-w-xl mx-auto">
-              Sudah pernah mengikuti pelatihan? Ajukan akses materi dan
+              Melewatkan pelatihan pendidik cendekia? Ajukan akses materi dan
               pendampingan belajar mandiri di bawah, tim kami akan menghubungi
               Anda melalui WhatsApp.
             </p>
@@ -232,7 +232,7 @@ export default function MandiriBelajarPage() {
             <div className="flex flex-col items-center">
               <div className="w-full max-w-xs rounded-xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/flyer/Contoh-Sertifikat.webp"
+                  src="/assets/flyer/contoh-Sertifikat-1.webp"
                   alt="Contoh Sertifikat"
                   className="w-full h-auto"
                 />
@@ -283,10 +283,10 @@ export default function MandiriBelajarPage() {
                 2
               </div>
               <h3 className="font-bold text-biru text-lg mb-2">
-                Akses Materi &amp; Rekaman
+                Gabung Grup Diskusi
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Materi dan rekaman pelatihan langsung terbuka untuk dipelajari.
+                Diskusi dan bimbingan intensif bersama mentor.
               </p>
             </div>
             <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
@@ -294,10 +294,10 @@ export default function MandiriBelajarPage() {
                 3
               </div>
               <h3 className="font-bold text-biru text-lg mb-2">
-                Gabung Grup Diskusi
+                Akses Materi &amp; Rekaman
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Diskusi dan bimbingan intensif bersama mentor.
+                Materi dan rekaman pelatihan langsung terbuka untuk dipelajari.
               </p>
             </div>
             <div className="bg-white rounded-3xl p-6 text-center shadow-md hover:shadow-xl transition">
@@ -308,7 +308,7 @@ export default function MandiriBelajarPage() {
                 Terima Sertifikat
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Sertifikat resmi PT Cipta Arah Cendekia dikirim.
+                Sertifikat resmi Pelatihan Pendidik Cendekia.
               </p>
             </div>
           </div>
@@ -394,7 +394,7 @@ export default function MandiriBelajarPage() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/pamflet-091226.webp"
+                  src="/assets/flyer/draft-pamflet-091226.webp"
                   alt="Flyer Webinar Batch 3"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />

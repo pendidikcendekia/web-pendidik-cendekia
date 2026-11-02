@@ -452,7 +452,7 @@ export default function PelatihanTerbaruPage() {
                   alt="Flyer Webinar Batch 2"
                   className="w-full aspect-video object-contain rounded-xl shadow-2xl"
                   />
-                  </div>
+                </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
                   <span className="inline-block bg-buah text-white text-xs font-bold tracking-wider px-3 py-1 rounded-full mb-3">
                     WEBINAR
@@ -489,9 +489,9 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                    src="/assets/flyer/thumbnail-091226.webp"
-                    alt="Flyer Webinar Batch 3"
-                    className="w-full h-56 md:h-72 object-cover object-top rounded-xl shadow-2xl"
+                  src="/assets/flyer/thumbnail-091226.webp"
+                  alt="Flyer Webinar Batch 3"
+                  className="w-full aspect-video object-contain rounded-xl shadow-2xl"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
@@ -538,7 +538,7 @@ export default function PelatihanTerbaruPage() {
             </h2>
             <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
               Materi dan rekaman pelatihan yang telah berlangsung, lengkap dengan
-              pendampingan mentor dan e-sertifikat.
+              e-sertifikat dan grup diskusi.
             </p>
             <div className="w-20 h-1 bg-buah mx-auto rounded-full mt-5"></div>
           </div>
@@ -578,7 +578,7 @@ export default function PelatihanTerbaruPage() {
                       <i className="fas fa-chalkboard-user"></i>
                     </span>
                     <span className="text-gray-700 text-sm">
-                      Materi dan Rekaman
+                      Dokumen Pendukung
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -622,7 +622,7 @@ export default function PelatihanTerbaruPage() {
       <section className="py-6 md:py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-krem text-buah text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            Belajar - Bertumbuh - Berdampak
+            Belajar - Berkembang - Berdampak
           </span>
           <h2 className="text-2xl md:text-3xl font-bold text-biru mb-4">
             Langkah Kecil Hari Ini, Dampak Besar untuk Kelas Anda
