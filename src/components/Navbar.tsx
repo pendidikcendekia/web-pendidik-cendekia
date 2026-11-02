@@ -135,16 +135,15 @@ export default function Navbar() {
 
           {/* Aksi Kanan */}
           {!tanpaWa && (
-            <div className="hidden lg:flex items-center gap-3">
-              <a
-                href="https://wa.me/628991945123"
-                target="_blank"
-                className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
-              >
-                Hubungi WA
-              </a>
-            </div>
-          )}
+  <div className="hidden lg:flex items-center gap-3">
+    <Link
+      href="/kontak"
+      className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
+    >
+      Hubungi WA
+    </Link>
+  </div>
+)}
 
           {/* Tombol Menu HP */}
           <button
@@ -230,15 +229,14 @@ export default function Navbar() {
             );
           })}
           {!tanpaWa && (
-            <a
-              href="https://wa.me/628991945123"
-              target="_blank"
-              onClick={() => setMobileOpen(false)}
-              className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
-            >
-              Hubungi WA
-            </a>
-          )}
+  <Link
+    href="/kontak"
+    onClick={() => setMobileOpen(false)}
+    className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
+  >
+    Hubungi WA
+  </Link>
+)}
         </div>
       </div>
     </header>
