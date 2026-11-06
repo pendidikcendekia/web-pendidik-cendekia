@@ -29,7 +29,7 @@ export default function Beranda() {
                 Pengembangan Kompetensi Pendidik
               </h1>
               <p className="text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
-                Wadah belajar dan bertumbuh bagi pendidik melalui pelatihan,
+                Wadah belajar dan berkembang bagi pendidik melalui pelatihan,
                 pembelajaran, pendampingan, dan pengembangan karya yang relevan
                 dengan kebutuhan pendidikan.
               </p>
