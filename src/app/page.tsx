@@ -50,7 +50,7 @@ export default function Beranda() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/assets/flyer/pamflet-111126.webp"
+                src="/assets/flyer/pamflet_paket_november_2026.webp"
                 alt="Flyer Pendidik Cendekia"
                 className="w-full max-w-xs h-auto rounded-2xl shadow-2xl"
               />
