@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { mitra } from "@/data/pelatihan";
+import { halamanIklan } from "@/data/iklan";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://pendidikcendekia.id";
   return [
-    ...mitra.map((m) => ({
-      url: `${base}/${m.slug}`,
+    ...halamanIklan.map((h) => ({
+      url: `${base}/${h.slug}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.7,

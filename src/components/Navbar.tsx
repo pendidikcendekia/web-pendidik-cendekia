@@ -24,7 +24,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const tanpaWa = isHalamanMitra(pathname);
+  const halamanIklan = isHalamanMitra(pathname);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -38,6 +38,8 @@ export default function Navbar() {
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
+
+  if (halamanIklan) return null;
 
   const isActive = (url: string) => {
     if (url === "/") return pathname === "/";
@@ -134,16 +136,14 @@ export default function Navbar() {
           </nav>
 
           {/* Aksi Kanan */}
-          {!tanpaWa && (
-  <div className="hidden lg:flex items-center gap-3">
-    <Link
-      href="/kontak"
-      className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
-    >
-      Hubungi WA
-    </Link>
-  </div>
-)}
+          <div className="hidden lg:flex items-center gap-3">
+            <Link
+              href="/kontak"
+              className="bg-buah text-white px-5 py-2 rounded-full font-semibold hover:bg-biru transition"
+            >
+              Hubungi WA
+            </Link>
+          </div>
 
           {/* Tombol Menu HP */}
           <button
@@ -228,15 +228,13 @@ export default function Navbar() {
               </Link>
             );
           })}
-          {!tanpaWa && (
-  <Link
-    href="/kontak"
-    onClick={() => setMobileOpen(false)}
-    className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
-  >
-    Hubungi WA
-  </Link>
-)}
+          <Link
+            href="/kontak"
+            onClick={() => setMobileOpen(false)}
+            className="block py-2 bg-buah text-center text-white rounded-full font-semibold"
+          >
+            Hubungi WA
+          </Link>
         </div>
       </div>
     </header>

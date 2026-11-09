@@ -1,6 +1,6 @@
-import { mitra } from "@/data/pelatihan";
+import { halamanIklan } from "@/data/iklan";
 
-const slugMitra = new Set(mitra.map((m) => m.slug));
+const slugMitra = new Set(halamanIklan.map((h) => h.slug));
 
 export function isHalamanMitra(pathname: string): boolean {
   const segmen = pathname.split("/").filter(Boolean);
