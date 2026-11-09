@@ -13,7 +13,7 @@ export const halamanIklan: HalamanIklan[] = [
     slug: "pelatihanguru",
     wa: "6289682682790",
     waTampil: "0896-8268-2790",
-    poster: "/assets/flyer/pamflet-111126.webp",
+    poster: "/assets/flyer/pamflet-paket-nov-26.webp",
     judul: "Pelatihan Guru",
     deskripsi:
       "Tingkatkan kompetensi dan ciptakan inovasi melalui pelatihan guru Pendidik Cendekia. Pilih tema pelatihan, isi formulir, lalu daftar langsung via WhatsApp.",

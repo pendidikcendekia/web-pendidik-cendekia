@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import FooterGate from "@/components/FooterGate";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +58,7 @@ export default function RootLayout({
       <body className="bg-white text-biru font-sans">
         <Navbar />
         <main>{children}</main>
-        <FooterGate />
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
 import { dataPelatihan } from "@/data/jadwal";
 import styles from "./PendaftaranPelatihan.module.css";
@@ -158,8 +157,6 @@ Terima kasih.`;
     <section className={styles.pc}>
       <div className={styles.header}>
         <div className={styles.brand}>
-          <div className={styles.logo}>PC.</div>
-
           <div>
             <div className={styles.brandName}>PENDIDIK CENDEKIA</div>
             <div className={styles.brandSub}>
@@ -393,19 +390,19 @@ Terima kasih.`;
           <div className={styles.contact}>
             <div className={styles.contactTitle}>INFORMASI PENDAFTARAN</div>
 
-            <div className={styles.contactNumber}>WhatsApp: {waTampil}</div>
+            <a
+              href={`https://wa.me/${wa}?text=${encodeURIComponent(
+                "Halo Admin Pendidik Cendekia, saya ingin mendaftar pelatihan.",
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.contactButton}
+              aria-label={`Daftar melalui WhatsApp ${waTampil}`}
+            >
+              Daftar Melalui WhatsApp
+            </a>
           </div>
         </div>
-      </div>
-
-      <div className={styles.footer}>
-        <strong>PENDIDIK CENDEKIA</strong>
-        <br />
-        Mengembangkan Kompetensi, Menginspirasi Pendidikan.
-        <br />
-        <Link href="/kebijakan-privasi" className={styles.footerLink}>
-          Kebijakan Privasi
-        </Link>
       </div>
 
       {viewer && (
