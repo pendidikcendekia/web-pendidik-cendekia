@@ -137,9 +137,7 @@ export default function PendaftaranPelatihan({
 
     const rincianBersih = rincian.trim();
 
-    const pesan = `Halo Admin Pendidik Cendekia,
-
-Saya ingin mendaftar pelatihan.
+    const pesan = `Halo Admin Naya Pendidik Cendekia, Saya ingin mendaftar pelatihan.
 
 *DATA PESERTA*
 Nama: ${nama}
@@ -151,8 +149,8 @@ No. WhatsApp: ${waPeserta}
 
 *PILIHAN PELATIHAN*
 ${rincianBersih}
-Mohon informasi selanjutnya mengenai pendaftaran.
-Terima kasih.`;
+
+Mohon informasi selanjutnya mengenai pendaftaran dan pembayaran. Terima kasih.`;
 
     lacak();
     lacakKonversi();
