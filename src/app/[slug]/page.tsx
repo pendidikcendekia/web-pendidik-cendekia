@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { halamanIklan } from "@/data/iklan";
+import GoogleTagIklan from "@/components/GoogleTagIklan";
 import PendaftaranPelatihan from "@/components/PendaftaranPelatihan";
 
 export function generateStaticParams() {
@@ -46,11 +47,16 @@ export default async function HalamanMitra({
   if (!h) notFound();
 
   return (
-    <PendaftaranPelatihan
-      slug={h.slug}
-      wa={h.wa}
-      waTampil={h.waTampil}
-      poster={h.poster}
-    />
+    <>
+      <GoogleTagIklan tracking={h.tracking} />
+      <PendaftaranPelatihan
+        slug={h.slug}
+        wa={h.wa}
+        waTampil={h.waTampil}
+        poster={h.poster}
+        googleAdsId={h.tracking?.googleAdsId}
+        conversionLabel={h.tracking?.conversionLabel}
+      />
+    </>
   );
 }

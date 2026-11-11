@@ -9,6 +9,8 @@ type Props = {
   wa: string;
   waTampil: string;
   poster: string;
+  googleAdsId?: string;
+  conversionLabel?: string;
 };
 
 const namaBulan: Record<string, number> = {
@@ -50,6 +52,8 @@ export default function PendaftaranPelatihan({
   wa,
   waTampil,
   poster,
+  googleAdsId,
+  conversionLabel,
 }: Props) {
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
@@ -89,6 +93,19 @@ export default function PendaftaranPelatihan({
       event_category: "pelatihan",
       event_label: slug,
       event_value: 1,
+    });
+  }
+
+  function lacakKonversi() {
+    if (!googleAdsId || !conversionLabel) return;
+
+    const gtag = (window as unknown as { gtag?: (...a: unknown[]) => void })
+      .gtag;
+
+    gtag?.("event", "conversion", {
+      send_to: `${googleAdsId}/${conversionLabel}`,
+      value: 1.0,
+      currency: "IDR",
     });
   }
 
@@ -138,6 +155,7 @@ Mohon informasi selanjutnya mengenai pendaftaran dan pembayaran.
 Terima kasih.`;
 
     lacak();
+    lacakKonversi();
 
     window.open(
       `https://wa.me/${wa}?text=${encodeURIComponent(pesan)}`,
