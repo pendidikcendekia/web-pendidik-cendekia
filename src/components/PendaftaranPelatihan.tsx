@@ -150,7 +150,7 @@ No. WhatsApp: ${waPeserta}
 *PILIHAN PELATIHAN*
 ${rincianBersih}
 
-Mohon informasi selanjutnya mengenai pendaftaran dan pembayaran. Terima kasih.`;
+Mohon informasi selanjutnya mengenai pendaftaran. Terima kasih.`;
 
     lacak();
     lacakKonversi();
