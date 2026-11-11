@@ -135,12 +135,13 @@ export default function PendaftaranPelatihan({
         });
     });
 
+    const rincianBersih = rincian.trim();
+
     const pesan = `Halo Admin Pendidik Cendekia,
 
 Saya ingin mendaftar pelatihan.
 
 *DATA PESERTA*
-
 Nama: ${nama}
 Email: ${email}
 Instansi: ${instansi}
@@ -149,9 +150,8 @@ Provinsi: ${provinsi}
 No. WhatsApp: ${waPeserta}
 
 *PILIHAN PELATIHAN*
-${rincian}
-Mohon informasi selanjutnya mengenai pendaftaran dan pembayaran.
-
+${rincianBersih}
+Mohon informasi selanjutnya mengenai pendaftaran.
 Terima kasih.`;
 
     lacak();
@@ -410,7 +410,7 @@ Terima kasih.`;
 
             <a
               href={`https://wa.me/${wa}?text=${encodeURIComponent(
-                "Halo Admin Pendidik Cendekia, saya ingin mendaftar pelatihan.",
+                "Halo Admin Naya Pendidik Cendekia, saya ingin mendaftar pelatihan.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
