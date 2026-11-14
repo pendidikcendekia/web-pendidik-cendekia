@@ -90,7 +90,7 @@ export default function PelatihanTerbaruPage() {
           <div className="grid md:grid-cols-2">
             <div className="bg-krem p-3 flex items-center justify-center">
               <img
-                src="/assets/flyer/pamflet-111126.webp"
+                src="/assets/flyer/pamflet-251126.webp"
                 alt="Flyer Pelatihan Terdekat"
                 className="w-full max-w-sm h-auto rounded-2xl shadow-2xl"
               />
@@ -100,14 +100,14 @@ export default function PelatihanTerbaruPage() {
                 PELATIHAN TERDEKAT
               </span>
               <h2 className="text-2xl md:text-3xl font-bold text-biru mb-3">
-                Eksplorasi dan Pemanfaatan Canva AI dalam Pengembangan Media Pembelajaran
+                Pemanfaatan AI Gemini untuk Efisiensi Kerja Guru dan Tendik
               </h2>
               <p className="text-gray-600 mb-6">
-                Pelatihan praktis yang mengenalkan berbagai fitur Canva AI, dilanjutkan dengan eksplorasi dan praktik pemanfaatannya untuk mendukung pengembangan media dan aktivitas pembelajaran melalui LKP.
+                Pelatihan praktis untuk membantu guru dan tenaga kependidikan mengeksplorasi dan memanfaatkan Google Gemini sebagai asisten AI dalam mendukung pekerjaan Guru dan Tenaga Pendidik. 
               </p>
               <ul className="space-y-2 mb-6 text-biru">
                 <li>
-                  <i className="fas fa-calendar-day text-buah w-6"></i> Rabu, 11
+                  <i className="fas fa-calendar-day text-buah w-6"></i> Rabu, 25
                   November 2026
                 </li>
                 <li>
@@ -262,7 +262,7 @@ export default function PelatihanTerbaruPage() {
                   className={`${openAccordion === 0 ? "" : "hidden"} px-5 py-4 text-gray-600 leading-relaxed`}
                 >
                   <p>
-                    Pelatihan ini membekali peserta dengan keterampilan praktis dalam mengeksplorasi dan memanfaatkan berbagai fitur Canva AI untuk mengembangkan media pembelajaran yang kreatif dan interaktif, serta mendukung perancangan aktivitas pembelajaran melalui LKP.
+                    Pelatihan praktis untuk membantu guru dan tenaga kependidikan mengeksplorasi dan memanfaatkan Google Gemini sebagai asisten AI dalam mendukung pekerjaan Guru dan Tendik. Peserta akan berlatih menyusun prompt serta menerapkan Gemini untuk membantu penyusunan dokumen, pengolahan informasi dan data, pelaporan, administrasi pembelajaran, dan layanan sekolah.
                   </p>
                 </div>
               </div>
@@ -286,19 +286,19 @@ export default function PelatihanTerbaruPage() {
                   <ul className="space-y-2">
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Pengenalan Canva AI dan fitur-fiturnya
+                      Pengenalan Gemini AI dan fitur-fitur utamanya.
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Eksplorasi fitur Canva AI
+                      Teknik penyusunan prompt yang efektif sesuai kebutuhan pekerjaan
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Pemanfaatan Canva AI dalam pembelajaran
+                      Pemanfaatan Gemini untuk mendukung efisiensi tugas dan layanan GTK
                     </li>
                     <li>
                       <i className="fas fa-check-circle text-buah mr-2"></i>
-                      Praktik membuat karya dengan Canva AI
+                      Verifikasi hasil AI dan penerapan AI secara bijak dan bertanggung jawab.
                     </li>
                   </ul>
                 </div>
