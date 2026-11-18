@@ -120,7 +120,7 @@ export default function KontakPage() {
                 <h3 className="font-bold text-biru text-lg">{a.nama}</h3>
                 <p className="text-biru font-semibold text-sm mb-4">{a.telp}</p>
                 <a
-                  href={`https://wa.me/${a.wa}?text=Halo%20${a.nama}%2C%20saya%20ingin%20bertanya%20tentang%20Pendidik%20Cendekia.`}
+                  href={`https://wa.me/${a.wa}?text=Halo%20${a.nama}%2C%20saya%20ingin%20bertanya%20tentang%20Pelatihan%20Terbaru%20Pendidik%20Cendekia.`}
                   target="_blank"
                   className="block bg-buah text-white font-bold px-5 py-2.5 rounded-full hover:bg-biru transition text-xs"
                 >
