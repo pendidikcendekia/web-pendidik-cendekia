@@ -499,7 +499,7 @@ export default function PelatihanTerbaruPage() {
                     WEBINAR
                   </span>
                   <h3 className="text-xl md:text-2xl font-bold text-biru mb-3">
-                    Pemanfaatan Sumber Belajar Ruang Murid serta PID
+                    Bedah Hasil Asesmen - Langkah Praktis Menyusun Peta Kebutuhan Belajar Murid
                   </h3>
                   <ul className="space-y-2 mb-6 text-biru">
                     <li>
@@ -516,7 +516,7 @@ export default function PelatihanTerbaruPage() {
                     </li>
                   </ul>
                   <a
-                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ruang%20Murid%20dan%20PID."
+                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Langkah%20Praktis%20Memetakan%20Kebutuhan%20Murid."
                     target="_blank"
                     className="inline-block bg-buah text-white font-bold px-8 py-3 rounded-full hover:bg-biru transition text-center"
                   >

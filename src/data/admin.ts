@@ -19,4 +19,5 @@ export const ADMIN_LIST: Admin[] = [
   { nama: "Bagas", wa: "6285179787227", telp: "+62 851-7978-7227" },
   { nama: "Fattah", wa: "6288986176169", telp: "+62 889-8617-6169" },
   { nama: "Caca", wa: "62882020805861", telp: "+62 882-0208-05861" },
+  { nama: "Husna", wa: "6281927881903", telp: "+62 819-2788-1903" },
 ];

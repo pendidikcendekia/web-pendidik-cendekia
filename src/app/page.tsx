@@ -151,7 +151,7 @@ export default function Beranda() {
             <div className="bg-white rounded-3xl border border-krem shadow-sm hover:shadow-xl transition overflow-hidden flex flex-col">
               <div className="bg-krem p-3">
                 <img
-                  src="/assets/flyer/draft-pamflet-091226.webp"
+                  src="/assets/flyer/pamflet-091226.webp"
                   alt="Flyer Webinar Batch 3"
                   className="w-full h-96 md:h-[28rem] object-contain rounded-xl shadow-2xl"
                 />
@@ -166,7 +166,7 @@ export default function Beranda() {
                   </span>
                 </div>
                 <h3 className="font-bold text-biru text-lg mb-6">
-                  Pemanfaatan Sumber Belajar Ruang Murid dalam Mendukung Pembelajaran Mendalam Berbantuan PID
+                  Bedah Hasil Asesmen - Langkah Praktis Menyusun Peta Kebutuhan Belajar Murid
                 </h3>
                 <p className="text-gray-500 text-xs mb-3">
                   📅 Rabu, 09 Desember 2026 | 🕐 19.00 WIB
@@ -174,7 +174,7 @@ export default function Beranda() {
                 <div className="flex items-center justify-between gap-2 mb-6">
                   <span className="text-buah font-bold">Hubungi Admin</span>
                   <a
-                    href="https://wa.me/628991945123?text=Halo,%20saya%20ingin%20daftar%20Webinar%20Pemanfaatan%20Ruang%20Murid%20dalam%20Pembelajaran%20Digital"
+                    href="https://wa.me/628991945123?text=Halo%20Admin%20Pendidik%20Cendekia%2C%20saya%20ingin%20daftar%20Webinar%20Langkah%20Praktis%20Memetakan%20Kebutuhan%20Murid"
                     target="_blank"
                     className="bg-buah text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-biru transition"
                   >
