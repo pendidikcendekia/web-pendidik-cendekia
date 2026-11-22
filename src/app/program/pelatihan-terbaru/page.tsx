@@ -489,7 +489,7 @@ export default function PelatihanTerbaruPage() {
               <div className="grid md:grid-cols-2">
                 <div className="bg-krem p-3 flex items-center justify-center">
                   <img
-                  src="/assets/flyer/thumbnail-091226.webp"
+                  src="/assets/flyer/newthumbnail-091226.webp"
                   alt="Flyer Webinar Batch 3"
                   className="w-full aspect-video object-contain rounded-xl shadow-2xl"
                   />
